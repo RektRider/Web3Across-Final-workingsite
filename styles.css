@@ -53,7 +53,7 @@ nav a:hover {
 .hero {
   background: linear-gradient(135deg, #001f29 0%, #005b5b 100%);
   color: #fff;
-  padding: 100px 40px;
+  padding: 100px 100px;
   text-align: center;
   position: relative; /* Needed for ::before to position correctly */
   z-index: 1;
