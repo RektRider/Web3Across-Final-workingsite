@@ -428,20 +428,24 @@ nav a:hover {
   padding: 14px 32px;
   font-weight: 600;
   font-size: 16px;
-  color: #fff;
-  background: transparent;
-  border: 2px solid #000; /* Black outline */
+  color: #00f0d4;
+  background-color: transparent;
+  border: 2px solid #00f0d4;
   border-radius: 12px;
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: none;
+  font-family: inherit;
 }
 
 .cta-button:hover {
-  background-color: rgba(0, 240, 212, 0.07); /* soft Web3 cyan glow */
-  box-shadow: 0 0 12px rgba(0, 240, 212, 0.5); /* glow on hover */
+  background-color: rgba(0, 240, 212, 0.08);
+  color: #fff;
+  box-shadow: 0 0 12px rgba(0, 240, 212, 0.4);
   transform: translateY(-2px);
 }
+
+
 
 
 
