@@ -49,24 +49,55 @@ nav a:hover {
 
 /* === HERO SECTION === */
 .hero {
-  background: linear-gradient(to right, #01303f, #027373);
+  background: linear-gradient(to right, #01303f, #027374);
+  color: #fff;
   padding: 100px 20px;
   text-align: center;
 }
 
+.hero-content {
+  max-width: 960px;
+  margin: 0 auto;
+  animation: fadeIn 1.2s ease-in;
+}
+
 .hero h1 {
   font-size: 42px;
-  font-weight: 800;
-  margin-bottom: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
 }
 
-.hero p {
+.hero-subtext {
   font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
   color: #ccc;
-  max-width: 800px;
-  margin: 0 auto;
+  margin-bottom: 32px;
 }
 
+.hero-highlight {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #eee;
+}
+
+.hero-highlight .highlight {
+  color: #00f0d4;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+    
 /* === ABOUT SECTION === */
 .about-section {
   background-color: #000;
