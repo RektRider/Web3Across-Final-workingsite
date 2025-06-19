@@ -68,7 +68,6 @@ nav a:hover {
 .hero-logo-banner img {
   max-width: 650px;
   width: 100%;
-  filter: drop-shadow(0 0 18px #00f0d4);
 }
 
 .hero-content {
