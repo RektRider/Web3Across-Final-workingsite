@@ -237,7 +237,7 @@ nav a.active {
 }
 
 .section.dark-card {
-  background-color: #000;
+  background-color: #002333;
 }
 
 .section h2 {
@@ -257,14 +257,14 @@ nav a.active {
   background-color: #111;
   padding: 30px 20px;
   border-radius: 16px;
-  box-shadow: 0 0 10px rgba(0, 255, 204, 0.15);
+  box-shadow: 0 0 12px #159A9C33;
   transition: 0.3s ease;
   max-width: 300px;
   flex: 1;
 }
 
 .card:hover {
-  box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+  box-shadow: 0 0 20px #159A9C66;
 }
 
 .card span {
