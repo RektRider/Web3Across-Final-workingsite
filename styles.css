@@ -21,13 +21,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 32px;
+  padding: 8px 40px;
   background-color: #000;
-  height: 64px;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header img {
-  height: 32px;
+  height: 40px;
   padding: 0px;
 }
 
