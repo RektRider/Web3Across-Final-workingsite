@@ -1,21 +1,19 @@
 /* === GLOBAL STYLES === */
 body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #000;
-  color: #fff;
-  line-height: 1.6;
+  background: linear-gradient(to bottom, #002333, #021c25);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
 }
 
+
 a {
-  color: #14b8a6;
+  color: #159A9C;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #DEEFE7;
+  text-shadow: 0 0 6px rgba(21, 154, 156, 0.5);
 }
 
 /* === HEADER === */
@@ -24,20 +22,21 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 8px 40px;
-  background-color: #000;
+  background-color: #002333;
   height: 60px;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 header img {
   height: 104px;
   padding: 0px;
 }
-
+/* Navigation Links */
 nav a {
-  color: #00f0d4;
+  color: #159A9C;
   text-decoration: none;
   margin-left: 24px;
   font-weight: 500;
@@ -46,16 +45,22 @@ nav a {
 }
 
 nav a:hover {
-  color: #fff;
+  color: #DEEFE7;
+  text-shadow: 0 0 8px rgba(21, 154, 156, 0.5);
+}
+
+nav a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #159A9C;
 }
 
 /* === HERO SECTION === */
 .hero {
-  background: linear-gradient(135deg, #001f29 0%, #005b5b 100%);
+  background: linear-gradient(135deg, #002333 0%, #159A9C 100%);
   color: #fff;
-  padding: 100px 100px;
+  padding: 80px 40px;
   text-align: center;
-  position: relative; /* Needed for ::before to position correctly */
+  position: relative;
   z-index: 1;
   overflow: hidden;
 }
@@ -66,44 +71,45 @@ nav a:hover {
   inset: 0;
   background-image: url('https://transparenttextures.com/patterns/cubes.png');
   background: radial-gradient(circle at 50% 30%, rgba(0, 255, 255, 0.06), transparent 70%);
-  opacity: 0.03;
+  opacity: 0.05;
   z-index: 0;
   pointer-events: none;
 }
 
 .hero-logo-banner {
   text-align: center;
-  margin-bottom: 25px;
-  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .hero-logo-banner img {
-  max-width: 400px;
+  max-width: 360px;
   width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto 30px auto;
-  
+  margin: 0 auto 24px auto;
 }
 
 .hero-content {
   max-width: 960px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 700;
-  margin-bottom: 16px;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+  margin-bottom: 18px;
+  color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .hero-subtext {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 1.6;
-  color: #ccc;
-  margin-bottom: 32px;
+  line-height: 1.7;
+  color: #B4BEC9;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .hero-highlight {
@@ -111,11 +117,11 @@ nav a:hover {
   margin-bottom: 32px;
   font-weight: 500;
   line-height: 1.7;
-  color: #eee;
+  color: #B4BEC9;
 }
 
 .hero-highlight .highlight {
-  color: #00f0d4;
+  color: #159A9C;
   font-weight: 600;
 }
     
