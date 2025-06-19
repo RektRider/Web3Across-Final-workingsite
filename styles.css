@@ -62,6 +62,7 @@ nav a:hover {
 .hero-logo-banner {
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 40px;
   animation: fadeInScale 1.5s ease-out;
 }
 
