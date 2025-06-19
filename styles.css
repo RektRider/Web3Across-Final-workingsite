@@ -421,27 +421,28 @@ nav a:hover {
   }
 }
 
-/* === CTA BUTTON === */
+/* === CTA BUTTON — WEB3ACROSS OUTLINED STYLE === */
 .cta-button {
   display: inline-block;
-  margin-top: 24px;
+  margin-top: 32px;
   padding: 14px 32px;
-  background: #00f0d4;
-  color: #000;
   font-weight: 600;
   font-size: 16px;
-  border-radius: 8px;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #00f0d4; /* Web3Across accent */
+  border-radius: 10px;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 0 12px rgba(0, 240, 212, 0.4);
+  box-shadow: none;
 }
 
 .cta-button:hover {
-  background: #00dbc2;
+  background-color: rgba(0, 240, 212, 0.1); /* subtle glow tint */
+  box-shadow: 0 0 12px rgba(0, 240, 212, 0.3); /* glow ring */
   transform: translateY(-2px);
-  box-shadow: 0 0 16px rgba(0, 240, 212, 0.6);
-  color: #000;
 }
+
 
 
 
