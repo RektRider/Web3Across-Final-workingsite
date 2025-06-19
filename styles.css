@@ -127,52 +127,57 @@ nav a.active {
     
 /* === ABOUT SECTION === */
 .about-section {
-  background-color: #000;
+  background-color: linear-gradient(to bottom, #002333, #000);
   padding: 80px 20px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .section-title {
   font-size: 36px;
   font-weight: 700;
-  color: #14b8a6;
+  color: #159A9C;
   margin-bottom: 40px;
 }
 
 /* Intro Row: Badge + Paragraph */
 .about-header {
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .about-badge {
   display: inline-block;
-  background: linear-gradient(to right, #00535e, #00a8a2);
-  padding: 20px 30px;
-  border-radius: 16px;
+  background: #159A9C
+  color: #002333;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  font-weight: 600;
   font-size: 24px;
-  font-weight: 700;
-  color: white;
-  margin-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 
 .about-badge span {
-  font-weight: 900;
+  font-weight: 700;
+  color: #002333;
 }
 
 .about-description {
-  max-width: 900px;
+  max-width: 840px;
   font-size: 18px;
-  line-height: 1.6;
-  color: #ccc;
+  line-height: 1.7;
+  color: #B4BEC9;
 }
 
 .about-description .highlight {
-  color: #00ffe4;
+  color: #159A9C;
   font-weight: 600;
 }
 
@@ -184,18 +189,26 @@ nav a.active {
   justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .about-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .about-card {
   flex: 1;
   min-width: 280px;
-  background-color: #111;
+  background-color: #002333;
   border-radius: 20px;
   padding: 30px;
-  box-shadow: 0 0 12px rgba(0, 255, 204, 0.15);
-  transition: 0.3s ease;
+  box-shadow: 0 0 12px #159A9C33;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .about-card:hover {
-  box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+  box-shadow: 0 0 18px #159A9C66;
+  transform: translateY(-6px);
 }
 
 .about-card .icon {
@@ -205,15 +218,16 @@ nav a.active {
 }
 
 .about-card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 12px;
   font-weight: 600;
+  color: #fff;
 }
 
 .about-card p {
-  font-size: 14px;
-  color: #ccc;
-  line-height: 1.5;
+  font-size: 15px;
+  color: #B4BEC9;
+  line-height: 1.6;
 }
 
 /* === SERVICES SECTION === */
