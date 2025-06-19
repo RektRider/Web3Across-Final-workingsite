@@ -73,7 +73,6 @@ nav a:hover {
 .hero-content {
   max-width: 960px;
   margin: 0 auto;
-  animation: fadeIn 1.2s ease-in;
 }
 
 .hero h1 {
@@ -100,17 +99,6 @@ nav a:hover {
 .hero-highlight .highlight {
   color: #00f0d4;
   font-weight: 600;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity:1;
-    transform: translateY(0);
-  }
 }
     
 /* === ABOUT SECTION === */
