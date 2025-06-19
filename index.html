@@ -126,5 +126,36 @@
 <footer class="footer">
   <p>©2025 Web3Across. Built by RektRider for the decentralized world.</p>
 </footer>
+  <div id="form-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2>Let’s Get Started</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required />
+      <input type="text" placeholder="Project Name" required />
+      <input type="text" placeholder="Location" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Services you're interested in" required />
+      <textarea placeholder="Message" rows="4"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+<script>
+  function openModal() {
+    document.getElementById("form-modal").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("form-modal").style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById("form-modal");
+    if (event.target === modal) {
+      closeModal();
+    }
+  };
+</script>
 </body>
 </html>
