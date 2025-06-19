@@ -53,7 +53,7 @@ nav a:hover {
 .hero {
   background: linear-gradient(135deg, #001f29 0%, #005b5b 100%);
   color: #fff;
-  padding: 100px 20px;
+  padding: 100px 40px;
   text-align: center;
   position: relative; /* Needed for ::before to position correctly */
   z-index: 1;
@@ -77,9 +77,12 @@ nav a:hover {
 }
 
 .hero-logo-banner img {
-  max-width: 220px;
-  margin-bottom: 20px;
+  max-width: 400px;
   width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 30px auto;
+  
 }
 
 .hero-content {
@@ -499,6 +502,11 @@ nav a:hover {
   }
 }
 
+@media (min-width: 1024px) {
+  .hero-logo-banner img {
+    max-width: 280px;
+  }
+}
 
 
 
