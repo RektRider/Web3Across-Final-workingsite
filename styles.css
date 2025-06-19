@@ -51,7 +51,7 @@ nav a:hover {
 
 /* === HERO SECTION === */
 .hero {
-  background: linear-gradient(to right, #012f3f, #027376);
+  background: linear-gradient(135deg, #00303d 0%, #006c6c 100%);
   color: #fff;
   text-align: center;
   padding: 50px 20px; /* Increased top/bottom spacing */
@@ -59,6 +59,8 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .hero-logo-banner {
