@@ -21,18 +21,24 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 12px 40px;
   background-color: #000;
+  height: 72px;
 }
 
 header img {
-  height: 40px;
+  height: 56px;
+  padding: 8px 16px;
+  margin-right: 16px;
 }
 
 nav a {
+  color: #00fcd1;
+  text-decoration: none;
   margin-left: 30px;
   font-weight: 500;
   font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 /* === HERO SECTION === */
