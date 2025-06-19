@@ -444,6 +444,18 @@ nav a:hover {
   box-shadow: 0 0 12px rgba(0, 240, 212, 0.4);
   transform: translateY(-2px);
 }
+.cta-button:hover {
+  animation: pulseGlow 1.5s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  from {
+    box-shadow: 0 0 8px rgba(0, 240, 212, 0.3);
+  }
+  to {
+    box-shadow: 0 0 14px rgba(0, 240, 212, 0.6);
+  }
+}
 
 
 
