@@ -68,18 +68,30 @@ nav a:hover {
 .hero-logo-banner img {
   max-width: 300px;
   width: 100%;
-  filter: drop-shadow(0 0 12px #00f0d4);
+  animation: fadeInScale 1.5s ease-out, shimmer 6s infinite linear;
 }
 
-/* Animation */
+/* Animation Keyframes */
 @keyframes fadeInScale {
   0% {
     opacity: 0;
-    transform: scale(0.85) translateY(-20px);
+    transform: scale(0.95) translateY(-20px);
   }
   100% {
     opacity: 1;
     transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    filter: drop-shadow(0 0 12px #00f0d4);
+  }
+  50% {
+    filter: drop-shadow(0 0 24px #00f0d4);
+  }
+  100% {
+    filter: drop-shadow(0 0 12px #00f0d4);
   }
 }
 
