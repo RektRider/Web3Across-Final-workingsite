@@ -247,12 +247,14 @@ nav a.active {
 
 /* Card Grid */
 .service-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  gap: 32px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px 0;
 }
 
 /* Individual Cards */
@@ -285,21 +287,20 @@ nav a.active {
 }
 
 .service-card:hover {
-  box-shadow: 0 0 20px #159A9C66;
+  box-shadow: 0 0 24px #00f0d455;
   transform: translateY(-4px);
 }
 
 .service-card h3 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: bold;
   color: #fff;
-  margin-bottom: 16px;
-  line-height: 1.3;
+  margin-bottom: 12px;
 }
 
 .service-card p {
   font-size: 15px;
-  color: #ccc;
+  color: #aaa;
   line-height: 1.6;
 }
 
