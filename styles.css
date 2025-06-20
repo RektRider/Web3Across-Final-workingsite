@@ -235,7 +235,7 @@ nav a.active {
 /* === SERVICES SECTION === */
 .services-section {
   padding: 80px 40px;
-  background-color: #000;
+  background-color: linear-gradient(to bottom, #002333, #000);
 }
 
 .services-section h2 {
@@ -283,7 +283,7 @@ nav a.active {
 .pricing-section {
   padding: 1000px 20px;
   text-align: center;
-  background-color: #000;
+  background-color: linear-gradient(to bottom, #002333, #000);
   color: #fff;
 }
 
