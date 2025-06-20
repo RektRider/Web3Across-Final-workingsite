@@ -251,6 +251,7 @@ nav a.active {
   box-shadow: 0 0 12px #159A9C33;
   padding: 24px;
   max-width: 300px;
+  min-width: 260px;
   flex: 1 1 250px;
   text-align: center;
   transition: 0.3s ease;
