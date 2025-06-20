@@ -80,31 +80,22 @@ nav a.active {
   pointer-events: none;
 }
 
-.hero-logo-banner {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.hero-logo-banner img {
-  max-width: 360px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 24px auto;
-}
-
 .hero-content {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 16px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 18px;
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 24px;
   color: #ffffff;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  letter-spacing: -0.5px;
+  line-height: 1.3
 }
 
 .hero-subtext {
@@ -118,10 +109,13 @@ nav a.active {
 
 .hero-highlight {
   font-size: 20px;
-  margin-bottom: 32px;
   font-weight: 500;
-  line-height: 1.7;
+  margin-bottom: 36px;
   color: #B4BEC9;
+  line-height: 1.7;
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-highlight .highlight {
