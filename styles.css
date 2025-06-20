@@ -1,6 +1,6 @@
 /* === GLOBAL STYLES === */
 body {
-  background: linear-gradient(to bottom, #002333, #159A9C 100%);
+  background: radial-gradient(ellipse at top left, #002333 0%, #000000 100%);
   background-attachment: fixed;
   background-size: cover;
   color: #ffffff;
@@ -58,7 +58,7 @@ nav a.active {
 
 /* === HERO SECTION === */
 .hero {
-  background: linear-gradient(135deg, #002333 0%, #159A9C 100%);
+  background: radial-gradient(ellipse at top left, #002333 0%, #000000 100%);
   color: #fff;
   padding: 80px 40px;
   text-align: center;
