@@ -45,6 +45,7 @@ header {
 .logo {
   height: 24px;
   width: auto;
+  max-width: 160px; 
   display: block;
 }
 
