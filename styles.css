@@ -29,28 +29,49 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap; /* allow wrapping */
   gap: 16px;
-  backdrop-filter: blur(12px);
   background-color: rgba(0, 35, 51, 0.9);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   z-index: 999;
 }
 
-header .logo img {
+.logo img {
   height: 24px;
   width: auto;
   display: block;
 }
 
-/* Navigation container */
-nav {
+/* Navigation Container */
+.nav-links {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: flex-end;
   flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* Navigation Links */
+.nav-links a {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.75;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
 }
 
 /* Navigation links */
