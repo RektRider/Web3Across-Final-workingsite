@@ -455,6 +455,23 @@ nav a.active {
   border-top: 1px solid #111;
 }
 
+.footer-socials {
+  margin-top: 12px;
+}
+
+.footer-socials a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #00f0d4;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #00dbc2;
+  transform: scale(1.2);
+}
+
 /* === MODAL FORM === */
 .modal {
   display: none;
