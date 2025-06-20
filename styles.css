@@ -274,17 +274,77 @@ nav a.active {
   color: #ccc;
 }
 
-/* Pricing Section - Add-ons (Social + Design) */
+/* === PRICING SECTION === */
+.pricing-section {
+  padding: 1000px 20px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.pricing-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+/* Pricing Cards Grid */
+,pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.pricing-card { 
+  backgorund: #0a0a0a;
+  border: 1px solid #159A9C33;
+  border-radius: 20px;
+  box-shadow: 0 0 12 px #159A9C33;
+  padding: 32px 24px;
+  max-width: 240px;
+  flex: 1 1 200px;
+  transition: 0.3s ease;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 0 20px #159A9C66;
+  transform: translateY(-4px);
+}
+
+.pricing-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.pricing-card .price {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #00ffd5;
+}
+
+.pricing-card .features {
+  font-size: 15px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* === PRICING EXTRAS: SOCIAL + DESIGN === */
 .pricing-extras {
   max-width: 1000px;
-  margin: 4rem auto 6rem;
-  padding: 0 2rem;
+  margin: 4rem auto 2rem;
+  padding: 0 20px;
   text-align: center;
   color: #fff;
 }
 
 .pricing-extras h3 {
-  font-size: 1.5rem;
+  font-size: 24px;
   color: #00ffd5;
   margin-bottom: 1rem;
 }
@@ -292,13 +352,25 @@ nav a.active {
 .pricing-extras ul {
   list-style: none;
   padding: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 0 auto 3rem;
+  max-width: 600px;
 }
 
 .pricing-extras li {
-  font-size: 1rem;
+  font-size: 16px;
   color: #ccc;
   margin: 0.5rem 0;
+  text-align: left;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.pricing-extras li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #159A9C;
+  font-size: 1rem;
 }
 
 /* Contact Section */
