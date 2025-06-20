@@ -390,8 +390,10 @@ nav a.active {
 .contact-form {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
   justify-content: center;
+  align-items: center; 
   margin-bottom: 30px;
 }
 
@@ -402,14 +404,21 @@ nav a.active {
   color: #fff;
   border: 1px solid #333;
   border-radius: 4px;
+  box-shadow: 0 0 8px #159A9C33;
   font-size: 1rem;
-  width: 220px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .contact-form textarea {
   width: 100%;
   max-width: 460px;
   resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
 }
 
 .contact-form button {
