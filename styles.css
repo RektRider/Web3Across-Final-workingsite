@@ -41,6 +41,7 @@ header img {
 }
 /* Navigation Links */
 nav a {
+  font-family: 'Space Grotesk', sans-serif;
   color: #ffffff;
   margin-left: 24px;
   font-weight: 500;
@@ -52,12 +53,12 @@ nav a {
 }
 
 nav a:hover {
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 nav a.active {
   color: #ffffff;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
 }
 
 /* === HERO SECTION === */
