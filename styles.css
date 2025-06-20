@@ -30,31 +30,30 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; 
-  gap: 16px; 
+  gap: 16px;
   backdrop-filter: blur(12px);
   background-color: rgba(0, 35, 51, 0.9);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   z-index: 999;
-  }
+}
 
-header img {
+header .logo img {
   height: 24px;
-  vertical-align: middle;
-  padding: 0px;
   width: auto;
   display: block;
 }
-/* Navigation Links */
+
+/* Navigation container */
 nav {
   display: flex;
   align-items: center;
-  gap: 24px; 
-  flex-wrap: nowrap;
-  flex-shrink: 1;
-  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 24px;
   justify-content: flex-end;
+  flex-grow: 1;
 }
 
+/* Navigation links */
 nav a {
   font-family: 'Space Grotesk', sans-serif;
   color: #ffffff;
