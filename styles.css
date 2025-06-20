@@ -37,7 +37,12 @@ header {
   z-index: 999;
 }
 
-.logo img {
+.logo-container {
+  max-width: 160px;
+  flex-shrink: 0;
+}
+  
+.logo {
   height: 24px;
   width: auto;
   display: block;
