@@ -232,76 +232,49 @@ nav a.active {
 
 /* === SERVICES SECTION === */
 .services-section {
-  padding: 100px 20px;
-  background: #000;
-  color: #fff;
-  text-align: center;
+  padding: 80px 40px;
+  background-color: #000;
 }
 
 .services-section h2 {
   font-size: 36px;
-  font-weight: 700;
+  color: #00f8cf;
+  text-align: center;
   margin-bottom: 60px;
-  color: #00ffd5;
 }
 
-/* Card Grid */
 .service-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 32px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 0;
 }
 
-/* Individual Cards */
 .service-card {
-  background: #002333;
-  border: 1px solid #159A9C33;
-  box-shadow: 0 0 16px #159A9C33;
+  background-color: #012733;
   border-radius: 20px;
-  padding: 32px;
-  text-align: left;
-  transition: 0.3s ease;
-  display: flex;
-  flex-direction: 1 1 300px;
-  height: 100%;
-}
-
-.service-card {
-  animation: fadeIn 0.8s ease-in;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.97);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  box-shadow: 0 0 12px rgba(0, 255, 200, 0.1); 
+  padding: 24px 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
-  box-shadow: 0 0 24px #00f0d455;
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
 }
 
 .service-card h3 {
   font-size: 20px;
-  font-weight: bold;
-  color: #fff;
+  font-weight: 600;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
 .service-card p {
   font-size: 15px;
-  color: #aaa;
   line-height: 1.6;
+  color: #cfdedf;
 }
 
 /* === PRICING SECTION === */
