@@ -21,17 +21,19 @@ a:hover {
 
 /* === HEADER === */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 40px;
-  background-color: #002333;
-  height: 60px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
-}
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 35, 51, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 999;
+  }
 
 header img {
   height: 104px;
@@ -39,22 +41,22 @@ header img {
 }
 /* Navigation Links */
 nav a {
-  color: #159A9C;
-  text-decoration: none;
+  color: #ffffff;
   margin-left: 24px;
   font-weight: 500;
-  font-size: 16px;
-  transition: color 0.3s ease;
+  font-size: 24px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
 }
 
 nav a:hover {
-  color: #DEEFE7;
-  text-shadow: 0 0 8px rgba(21, 154, 156, 0.5);
+  opacity: 0.7;
 }
 
 nav a.active {
   color: #ffffff;
-  border-bottom: 2px solid #159A9C;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 4px;
 }
 
 /* === HERO SECTION === */
