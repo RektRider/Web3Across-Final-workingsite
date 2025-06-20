@@ -36,9 +36,9 @@ header {
   }
 
 header img {
-  height: 32px;
+  height: 24px;
   vertical-align: middle;
-  padding: 0px;
+  padding: 20px;
 }
 /* Navigation Links */
 nav a {
