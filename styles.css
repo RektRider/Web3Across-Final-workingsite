@@ -29,6 +29,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; 
+  gap: 16px; 
   backdrop-filter: blur(12px);
   background-color: rgba(0, 35, 51, 0.9);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -57,8 +59,6 @@ nav a {
   font-size: 16px;
   text-decoration: none;
   transition: opacity 0.3s ease, border-bottom 0.3s ease;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 2px;
 }
 
 nav a:hover {
