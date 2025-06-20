@@ -231,27 +231,41 @@ nav a.active {
 }
 
 /* === SERVICES SECTION === */
-.services-section h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
+.services-section {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #011b24;
   color: #fff;
 }
 
+.services-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #00ffd5;
+  text-align: left;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+
+/* Grid Layout */
 .service-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
+/* Individual Cards */
 .service-card {
   background: #0a0a0a;
   border: 1px solid #159A9C33;
   border-radius: 20px;
   box-shadow: 0 0 12px #159A9C33;
-  padding: 24px;
-  max-width: 300px;
-  min-width: 260px;
+  padding: 32px 24px;
+  max-width: 280px;
   flex: 1 1 250px;
   text-align: center;
   transition: 0.3s ease;
@@ -264,13 +278,15 @@ nav a.active {
 
 .service-card h3 {
   font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
   color: #fff;
-  margin-bottom: 10px;
 }
 
 .service-card p {
-  font-size: 14px;
+  font-size: 15px;
   color: #ccc;
+  line-height: 1.5;
 }
 
 /* === PRICING SECTION === */
