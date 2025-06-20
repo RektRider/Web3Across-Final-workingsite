@@ -1,5 +1,6 @@
 /* === GLOBAL STYLES === */
 body {
+  margin: 0;
   background: radial-gradient(ellipse at top left, #002333 0%, #000000 100%);
   background-attachment: fixed;
   background-size: cover;
@@ -58,7 +59,7 @@ nav a.active {
 
 /* === HERO SECTION === */
 .hero {
-  background: radial-gradient(ellipse at top left, #002333 0%, #000000 100%);
+  background: transparent;
   color: #fff;
   padding: 80px 80px;
   text-align: center;
@@ -129,7 +130,7 @@ nav a.active {
     
 /* === ABOUT SECTION === */
 .about-section {
-  background-color: linear-gradient(to bottom, #002333, #000);
+  background: transparent;
   padding: 80px 20px;
   color: #ffffff;
 }
@@ -235,7 +236,8 @@ nav a.active {
 /* === SERVICES SECTION === */
 .services-section {
   padding: 80px 40px;
-  background-color: linear-gradient(to bottom, #002333, #000);
+  background: transparent;
+  color: #ffffff;
 }
 
 .services-section h2 {
@@ -283,7 +285,7 @@ nav a.active {
 .pricing-section {
   padding: 1000px 20px;
   text-align: center;
-  background-color: linear-gradient(to bottom, #002333, #000);
+  background: transparent;
   color: #fff;
 }
 
