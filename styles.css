@@ -173,13 +173,13 @@ header {
 }
 
 .about-box .box-top {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 4px;
 }
 
 .about-box .box-bottom {
-  font-size: 1.8rem;
+  font-size: 4rem;
   font-weight: 800;
   color: #000;
 }
