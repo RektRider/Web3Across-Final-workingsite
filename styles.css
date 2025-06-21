@@ -212,7 +212,7 @@ header {
 /* === CARD GRID === */
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(3000px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
   margin-top: 40px;
 }
