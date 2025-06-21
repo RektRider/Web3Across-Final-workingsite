@@ -158,9 +158,9 @@ header {
 /* We Speak Web3 box */
 .about-box {
   background: linear-gradient(135deg, #00ffd5, #0066ff);
-  color: #fff;
+  color: #ffffff;
   border-radius: 20px;
-  padding: 30px 20px;
+  padding: 20px 10px;
   width: 300px;
   height: fit-content;
   text-align: center;
@@ -172,12 +172,12 @@ header {
 }
 
 .about-box .box-top {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
 .about-box .box-bottom {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 800;
   margin-top: 5px;
   color: #000;
