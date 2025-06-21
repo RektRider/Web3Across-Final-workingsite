@@ -133,106 +133,102 @@ header {
     
 /* === ABOUT SECTION === */
 .about-section {
-  background: transparent;
-  padding: 80px 20px;
-  color: #ffffff;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-.section-title {
-  font-size: 36px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 40px;
-}
-
-/* Intro Row: Badge + Paragraph */
-.about-header {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.about-badge {
-  display: inline-block;
-  background: #159A9C
-  color: #002333;
-  font-size: 14px;
-  padding: 6px 12px;
-  border-radius: 999px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 24px;
-  letter-spacing: 0.5px;
-}
-
-.about-badge span {
-  font-weight: 700;
-  color: #002333;
-}
-
-.about-description {
-  max-width: 840px;
-  font-size: 18px;
-  line-height: 1.7;
-  color: #ffffff;
-}
-
-.about-description .highlight {
-  color: #159A9C;
-  font-weight: 600;
-}
-
-/* About Cards Row */
-.about-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
-}
-
-@media (max-width: 768px) {
-  .about-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.about-card {
-  flex: 1;
-  min-width: 280px;
-  background-color: #002333;
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0 0 12px #159A9C33;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.about-card:hover {
-  box-shadow: 0 0 18px #159A9C66;
-  transform: translateY(-6px);
-}
-
-.about-card .icon {
-  font-size: 32px;
-  margin-bottom: 15px;
-  color: #14b8a6;
-}
-
-.about-card h3 {
-  font-size: 22px;
-  margin-bottom: 12px;
-  font-weight: 600;
+  padding: 100px 0;
+  background: linear-gradient(135deg, #001a20, #000e13); /* dark gradient background */
   color: #fff;
 }
 
+.about-section .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+/* Flex container for box + description */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+/* We Speak Web3 box */
+.about-box {
+  background: linear-gradient(135deg, #00ffd5, #0066ff);
+  color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 213, 0.5);
+}
+
+.about-box .box-top {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.about-box .box-bottom {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-top: 5px;
+  color: #000;
+}
+
+/* Description next to the box */
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.about-description .highlight {
+  color: #00ffd5;
+  font-weight: 600;
+}
+
+/* === CARD GRID === */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 255, 213, 0.1);
+}
+
+.about-card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
 .about-card p {
-  font-size: 15px;
-  color: #B4BEC9;
+  color: #ccc;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
