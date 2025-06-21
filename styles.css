@@ -34,7 +34,7 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   z-index: 999;
   box-sizing: border-box;
-  overflow-x: hidden; /* ✅ Prevent horizontal scroll from header */
+  overflow-x: hidden; 
 }
 
 /* LOGO */
@@ -54,7 +54,7 @@ header {
   gap: 24px;
   flex-wrap: wrap;
   justify-content: flex-end;
-  padding-right: 8px; /* ✅ Prevent cutoff on far-right */
+  padding-right: 8px; 
 }
 
 .nav-links a {
@@ -64,7 +64,7 @@ header {
   font-size: 16px;
   text-decoration: none;
   transition: opacity 0.3s ease;
-  white-space: nowrap; /* ✅ Prevent wrapping of link text */
+  white-space: nowrap; 
 }
 
 .nav-links a:hover {
@@ -80,7 +80,7 @@ header {
 .hero {
   background: transparent;
   color: #fff;
-  padding: 200px 100px 100px;
+  padding: 200px 100px;
   text-align: left;
   position: relative;
   z-index: 1;
