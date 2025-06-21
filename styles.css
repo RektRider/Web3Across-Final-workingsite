@@ -80,7 +80,7 @@ header {
 .hero {
   background: transparent;
   color: #fff;
-  padding-top: 150px 100px 100px;
+  padding: 150px 100px 100px;
   text-align: left;
   position: relative;
   z-index: 1;
