@@ -182,10 +182,10 @@ header {
   font-size: 2rem;
   font-weight: 800;
   color: transparent;
-  -webkit-text-stroke: 1.5px #ffffff;
-  text-stoke: 1.5px #ffffff;
-  line-height: 1;
-  margin-top: auto;
+  -webkit-text-stroke: 1.2px #ffffff;
+  text-stoke: 1.2px #ffffff;
+  line-height: 1.2;
+  margin-top: 10px;
   margin-bottom: 50px;
 }
 
