@@ -212,28 +212,31 @@ header {
 /* === CARD GRID === */
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(3000px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
 }
 
 .about-card {
   background: transparent;
-  padding: 30px;
-  border-radius: 16px;
+  padding: 20px;
+  border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(6px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.about-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  object-fit: contain;
 }
 
 .about-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
   box-shadow: 0 10px 30px rgba(0, 255, 213, 0.1);
-}
-
-.about-card .icon {
-  font-size: 2rem;
-  margin-bottom: 10px;
 }
 
 .about-card h3 {
@@ -243,7 +246,7 @@ header {
 }
 
 .about-card p {
-  color: #ccc;
+  color: #ffffff
   font-size: 1rem;
   line-height: 1.6;
 }
