@@ -606,7 +606,7 @@ header {
 
 @media (max-width: 1024px) {
   .hero {
-    padding: 100px 40px 60px 40px; /* Reduce side padding */
+    padding: 80px 40px;
   }
 
   .hero-content {
@@ -627,7 +627,7 @@ header {
 
 @media (max-width: 600px) {
   .hero {
-    padding: 80px 24px 40px 24px; /* Mobile-friendly padding */
+    padding: 60px 24px;
   }
 
   .hero h1 {
