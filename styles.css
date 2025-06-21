@@ -25,11 +25,10 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 16px 32px;
+  padding: 16px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   gap: 16px;
   background-color: rgba(0, 35, 51, 0.9);
   backdrop-filter: blur(12px);
@@ -53,10 +52,10 @@ header {
 /* Nav links */
 .nav-links {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
   justify-content: flex-end;
   align-items: center;
+  flex-shrink: 1;
 }
 
 /* Nav link styles */
