@@ -172,10 +172,10 @@ header {
 }
 
 .about-box .box-top {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 0px;
-  margin-top: 50px;
+  margin-top: 60px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -183,11 +183,12 @@ header {
   font-size: 2rem;
   font-weight: 800;
   color: transparent;
-  -webkit-text-stroke: 1.2px #ffffff;
-  text-stoke: 1.2px #ffffff;
+  -webkit-text-stroke: 1px #ffffff;
+  text-stoke: 1px #ffffff;
   line-height: 1.2;
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin-top: 5px;
+  margin-bottom: 60px;
+  letter-spacing: 2px;
   font-family: 'Poppins', sans-serif;
 }
 
