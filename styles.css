@@ -176,6 +176,7 @@ header {
   font-weight: 600;
   margin-bottom: 0px;
   margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .about-box .box-bottom {
@@ -187,6 +188,7 @@ header {
   line-height: 1.2;
   margin-top: 10px;
   margin-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Text section next to the box */
