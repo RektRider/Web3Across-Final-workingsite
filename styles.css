@@ -630,7 +630,7 @@ header {
 
 @media (max-width: 640px) {
   .hero {
-    padding: 100px 24px 100px;
+    padding: 140px 24px 100px;
   }
 
   .hero h1 {
