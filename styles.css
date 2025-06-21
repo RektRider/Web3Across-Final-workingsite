@@ -608,12 +608,12 @@ header {
 
 @media (max-width: 1024px) {
   .hero {
-    padding-top: 200px;  
+    padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 40px;
     padding-right: 40px;
   }
-
+}
   .hero-content {
     max-width: 100%;
     padding: 0;
@@ -632,8 +632,8 @@ header {
 
 @media (max-width: 600px) {
   .hero {
-    padding-top: 150px;  
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     padding-left: 24px;
     padding-right: 24px;
   }
