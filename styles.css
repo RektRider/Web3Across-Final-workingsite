@@ -159,10 +159,9 @@ header {
 .about-box {
   background: linear-gradient(135deg, #00ffd5, #0066ff);
   color: #ffffff;
-  border-radius: 12px;
-  padding: 20px 30px;
+  border-radius: 10px;
   width: 180px; 
-  height: auto;
+  height: 100px;
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 255, 213, 0.3);
   display: flex;
@@ -173,15 +172,18 @@ header {
 }
 
 .about-box .box-top {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 4px;
+  margin-bottom: 0px;
+  margin-top: 50px;
 }
 
 .about-box .box-bottom {
   font-size: 2rem;
   font-weight: 800;
   color: #000;
+  margin-top: auto;
+  margin-bottom: 50px;
 }
 
 /* Text section next to the box */
@@ -209,9 +211,10 @@ header {
 }
 
 .about-card {
-  background: rgba(255, 255, 255, 0.02);
+  background: transparent;
   padding: 30px;
   border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(6px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
