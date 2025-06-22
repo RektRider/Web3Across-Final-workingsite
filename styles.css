@@ -133,15 +133,15 @@ header {
     
 /* === ABOUT SECTION === */
 .about-section {
-  padding: 100px 40px; /* add horizontal padding */
-  background: linear-gradient(135deg, #001a20, #000e13); 
+  padding: 80px 100px 120px; /* add horizontal padding */
+  background: transparent; 
   color: #fff;
 }
 
 .about-section .section-title {
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   color: #ffffff;
   padding-left: 5px; /* reduce to balance with text */
 }
@@ -157,9 +157,9 @@ header {
 
 /* We Speak Web3 box */
 .about-box {
-  background: linear-gradient(135deg, #00c2a5, #0055cc);
+  background: #159A9C;
   color: #ffffff;
-  border-radius: 10px;
+  border-radius: 16px;
   width: 180px; 
   height: 100px;
   text-align: center;
@@ -218,7 +218,7 @@ header {
 }
 
 .about-card {
-  background: transparent;
+  background: linear-gradient(135deg, #001a20, #000e13);
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -230,7 +230,7 @@ header {
 .about-icon {
   width: 60px;
   height: 60px;
-  margin-bottom: 20px;
+  padding: 20px 0px;
   object-fit: contain;
 }
 
@@ -664,11 +664,3 @@ header {
     font-size: 14px;
   }
 }
-
-
-
-
-
-
-
-
