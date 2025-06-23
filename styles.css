@@ -300,7 +300,7 @@ header {
 .service-card h3 {
   font-size: 20px;
   font-weight: 600;
-  color: #ffffff;
+  color: #159A9C;
   margin-bottom: 12px;
   margin-top: 20px;
 }
@@ -312,6 +312,14 @@ header {
   font-size: 15px;
   line-height: 1.6;
   color: #cfdedf;
+}
+
+/* Icon inside service card */
+.service-card .services-icon {
+  width: 60px;
+  height: 60px;
+  padding: 20px 0px;
+  object-fit: contain;
 }
 
 /* === PRICING SECTION === */
