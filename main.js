@@ -1,4 +1,4 @@
-// Flip card to back
+// Flip card to back (on Learn More button click)
 document.querySelectorAll('.flip-btn').forEach(button => {
   button.addEventListener('click', () => {
     const card = button.closest('.flip-card');
@@ -6,10 +6,11 @@ document.querySelectorAll('.flip-btn').forEach(button => {
   });
 });
 
-// Flip card back to front
-document.querySelectorAll('.flip-back-btn').forEach(button => {
-  button.addEventListener('click', () => {
-    const card = button.closest('.flip-card');
+// Flip card back to front (by clicking anywhere on the back)
+document.querySelectorAll('.flip-card-back').forEach(back => {
+  back.addEventListener('click', () => {
+    const card = back.closest('.flip-card');
     card.classList.remove('flipped');
   });
 });
+
