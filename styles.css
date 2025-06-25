@@ -235,7 +235,6 @@ header {
 .about-card:hover {
   box-shadow: 0 10px 30px rgba(0, 255, 213, 0.1);
   border: 2px solid rgba(180, 190, 201, 0.2);
-  border-color:B4BEC9;
 }
 
 .about-card h3 {
@@ -262,7 +261,21 @@ header {
   font-size: 36px;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+}
+
+.services-subtext {
+  text-align: center;
+  font-size: 17px;
+  color: #ffffff;
+  max-width: 1000px;
+  margin: 0 auto 48px;
+  line-height: 1.6;
+  opacity: 1;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  font-weight: 400;
+  padding: 0 20px;
 }
 
 .service-grid {
@@ -274,7 +287,7 @@ header {
 }
 
 .service-card {
-  background: linear-gradient(90deg, #000000, #002333);
+  background: #002333;
   border-radius: 12px;
   padding: 24px;
   color: #ffffff;
@@ -293,8 +306,15 @@ header {
 
 .service-card:hover {
   box-shadow: 0 10px 30px rgba(0, 255, 213, 0.1);
-  border: 2px solid rgba(180, 190, 201, 0.2);
-  border-color:B4BEC9;
+  border: 1px solid rgba(180, 190, 201, 0.2);
+  border-color: #B4BEC9;
+}
+
+.services-icon {
+  width: 60px;
+  height: 60px;
+  padding: 20px 0px;
+  object-fit: contain;
 }
 
 .service-card h3 {
@@ -325,7 +345,7 @@ header {
 
 /* === PRICING SECTION === */
 .pricing-section {
-  padding: 80px 40px;
+  padding: 80px 60px;
   background: transparent;
   color: #fff;
 }
@@ -342,7 +362,7 @@ header {
 .pricing-slider-container {
   overflow-x: auto;
   white-space: nowrap;
-  padding: 40px 0;
+  padding: 40px 24px;
   padding-top: 32px;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
@@ -360,7 +380,7 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 20px;
-  padding: 0 16px;
+  padding: 0 24px;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scroll-padding: 16px;
@@ -400,7 +420,7 @@ header {
 
 .flip-card-front .pricing-card {
   background: #081e2c;
-  border-radius: 12px;
+  border-radius: 20px;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -411,12 +431,14 @@ header {
 
 .flip-card-back .pricing-card.back {
   background: #0b1d28;
-  border-radius: 12px;
+  border-radius: 20px;
   height: 448px;
   padding: 32px;
   text-align: left; 
   overflow-wrap: break-word;
+  word-wrap: break-word;
   box-sizing: border-box;
+  white-space: normal;
 }
 
 /* 2) Tweak headings & paragraph spacing */
@@ -458,7 +480,7 @@ header {
 .pricing-card { 
   background: transparent;
   border: 1px solid #159A9C33;
-  border-radius: 16px;
+  border-radius: 20px;
   box-shadow: 0 0 12px #159A9C33;
   padding: 32px;
   width: 100%;
@@ -470,9 +492,9 @@ header {
 
 .pricing-card:hover {
   box-shadow: 0 0 20px #159A9C66;
-  border: 2px solid rgba(180, 190, 201, 0.2);
-  border-color:B4BEC9;
-  transform: translateY(-10px);
+  border: 1px solid rgba(180, 190, 201, 0.2);
+  border-color: #B4BEC9;
+  transform: translateY(-12px);
 }
 
 .pricing-card h3 {
@@ -532,6 +554,17 @@ header {
   color: #159A9C;
   font-size: 1rem;
 }
+
+.back-feature-list {
+  margin-top: 10px;
+  align-items: left;
+}
+
+.pricing-card.back ul li {
+  margin-bottom: 12px;
+  line-height: 0.6;
+}
+
 
 /* === PRICING EXTRAS: SOCIAL + DESIGN === */
 .pricing-extras {
