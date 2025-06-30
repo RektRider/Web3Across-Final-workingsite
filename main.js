@@ -59,6 +59,26 @@ window.addEventListener("scroll", () => {
     }
   });
 
+
+// Scroll animation for hero section
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate');
+    }
+  });
+}, {
+  threshold: 0.4
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(
+    ".hero-content, .hero h1, .hero-highlight, .cta-button"
+  );
+  elements.forEach(el => observer.observe(el));
+});
+
+
 // Media Partners Infinite Loop
 document.querySelectorAll('.logo-track').forEach(track => {
   track.innerHTML += track.innerHTML;
