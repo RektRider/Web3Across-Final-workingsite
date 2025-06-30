@@ -650,8 +650,9 @@ header {
   }
 
   .about-box {
-    width: 140px;
+    width: 380px;
     height: 80px;
+    padding: 0 20px;
   }
 
   .about-box .box-top {
