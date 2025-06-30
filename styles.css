@@ -324,10 +324,10 @@ header {
 }
 
 @media (max-width: 640px) {
-  .hero-content { 
+  .hero-content {
     text-align: left;
   }
-  
+
   .hero h1 {
     font-size: 36px;
   }
@@ -631,7 +631,7 @@ header {
   }
 
   .about-text {
-    text-align: center;
+    text-align: left;
   }
 
   .about-grid {
@@ -655,7 +655,7 @@ header {
   }
 
   .about-box .box-top {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .about-box .box-bottom {
