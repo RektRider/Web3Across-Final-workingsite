@@ -22,51 +22,51 @@ window.addEventListener("scroll", () => {
   if (navLinks.classList.contains("active")) {
     navLinks.classList.remove("active");
     menuToggle.classList.remove("active");
-    document.body.classList.remove("no-scroll"); 
+    document.body.classList.remove("no-scroll");
   }
 });
 
 
 // Modal Form
- function openModal() {
-    document.getElementById("form-modal").style.display = "flex";
-  }
-  function closeModal() {
-    document.getElementById("form-modal").style.display = "none";
-  }
-  window.onclick = e => {
-    if (e.target === document.getElementById("form-modal")) closeModal();
+function openModal() {
+  document.getElementById("form-modal").style.display = "flex";
+}
+function closeModal() {
+  document.getElementById("form-modal").style.display = "none";
+}
+window.onclick = e => {
+  if (e.target === document.getElementById("form-modal")) closeModal();
+};
+
+// 3) In your main.js (or inline), intercept and POST via fetch:
+document.getElementById("contactForm").addEventListener("submit", async function (e) {
+  e.preventDefault();               // don’t reload the page
+  const form = e.target;
+  // collect values
+  const payload = {
+    name: form.name.value,
+    project: form.project.value,
+    location: form.location.value,
+    email: form.email.value,
+    services: form.services.value,
+    message: form.message.value
   };
 
-  // 3) In your main.js (or inline), intercept and POST via fetch:
-  document.getElementById("contactForm").addEventListener("submit", async function(e) {
-    e.preventDefault();               // don’t reload the page
-    const form = e.target;
-    // collect values
-    const payload = {
-      name:     form.name.value,
-      project:  form.project.value,
-      location: form.location.value,
-      email:    form.email.value,
-      services: form.services.value,
-      message:  form.message.value
-    };
-
-    try {
-      const res = await fetch('/submit-form', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      const text = await res.text();
-      alert(text);
-      form.reset();
-      closeModal();
-    } catch(err) {
-      console.error(err);
-      alert('Oops, something went wrong.');
-    }
-  });
+  try {
+    const res = await fetch('/submit-form', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    const text = await res.text();
+    alert(text);
+    form.reset();
+    closeModal();
+  } catch (err) {
+    console.error(err);
+    alert('Oops, something went wrong.');
+  }
+});
 
 
 // Scroll animation for hero section
@@ -108,23 +108,27 @@ document.querySelectorAll('.media-logos .fade-up').forEach(el => {
 });
 
 
-// About Us Section Animation
-const aboutObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      aboutObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.3 });
+document.addEventListener("DOMContentLoaded", () => {
+  // About Section Scroll Animation
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
 
-// Observe elements in About section
-document.querySelectorAll(
-  '.about-section .section-title, ' +
-  '.about-box, ' +
-  '.about-text, ' +
-  '.about-card'
-).forEach(el => aboutObserver.observe(el));
+    document.querySelectorAll('.about-section .section-title, .about-content, .about-grid, .about-card')
+      .forEach(el => observer.observe(el));
+  } else {
+    // Fallback: show everything if browser doesn't support IntersectionObserver
+    document.querySelectorAll('.about-section .section-title, .about-content, .about-grid, .about-card')
+      .forEach(el => el.classList.add('visible'));
+  }
+});
+
+
 
 
 // PR Pricing Card Flip
@@ -207,7 +211,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const percent = ((val - min) / (max - min)) * 100;
     slider.style.background = `linear-gradient(to right, #00ccb0 0%, #00ccb0 ${percent}%, #e2e8f0 ${percent}%, #e2e8f0 100%)`;
   }
-  
+
 
   // Social Pricing Calculation
   function updateSocialPricing() {
@@ -240,10 +244,10 @@ document.addEventListener("DOMContentLoaded", function () {
     viewCount.textContent = `${sliderValue >= 1000
       ? sliderValue / 1000 + "M Views"
       : sliderValue + "K Views"
-    }`;
+      }`;
     viewPrice.textContent = `$${price.toLocaleString()}`;
 
-     updateSliderBackground(viewSlider);
+    updateSliderBackground(viewSlider);
   }
 
   // Initial pricing update
@@ -267,7 +271,3 @@ document.querySelectorAll('.card-section').forEach(section => {
     section.style.background = 'rgba(255, 255, 255, 0.02)';
   });
 });
-
-
-
-
