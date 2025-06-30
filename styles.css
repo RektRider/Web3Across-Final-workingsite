@@ -378,9 +378,9 @@ header {
   /* down from 0.9rem → smaller */
   font-weight: 300;
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 20px;
+  margin-top: 40px;
   /* tighter spacing above */
-  padding-top: 10px;
+  padding-top: 20px;
   /* smaller top padding */
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
