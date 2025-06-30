@@ -333,6 +333,10 @@ header {
 }
 
 @media (max-width: 640px) {
+  .hero-content { 
+    text-align: left;
+  }
+  
   .hero h1 {
     font-size: 36px;
   }
