@@ -130,18 +130,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Scroll animation for How We Work cards
-const howWorkObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = 1;
-      entry.target.style.transform = 'translateY(0)';
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.15 });
+document.addEventListener('DOMContentLoaded', () => {
+  const howWorkCards = document.querySelectorAll('.how-work-card');
 
-document.querySelectorAll('.how-work-card').forEach(card => {
-  howWorkObserver.observe(card);
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('reveal');
+        }, index * 150);
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  howWorkCards.forEach(card => {
+    observer.observe(card);
+  });
 });
 
 
