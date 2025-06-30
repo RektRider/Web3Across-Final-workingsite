@@ -108,6 +108,25 @@ document.querySelectorAll('.media-logos .fade-up').forEach(el => {
 });
 
 
+// About Us Section Animation
+const aboutObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      aboutObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+// Observe elements in About section
+document.querySelectorAll(
+  '.about-section .section-title, ' +
+  '.about-box, ' +
+  '.about-text, ' +
+  '.about-card'
+).forEach(el => aboutObserver.observe(el));
+
+
 // PR Pricing Card Flip
 // Flip card to back (on Learn More button click)
 document.querySelectorAll('.flip-btn').forEach(button => {
