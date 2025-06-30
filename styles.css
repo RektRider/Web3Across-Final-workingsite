@@ -454,37 +454,43 @@ header {
 }
 
 
-/* === ABOUT SECTION === */
+/* === ABOUT SECTION (UPDATED) === */
 .about-section {
   padding: 80px 100px 120px;
-  /* add horizontal padding */
   background: transparent;
   color: #fff;
+  overflow-x: hidden;
 }
 
+/* Section title with scroll‑fade */
 .about-section .section-title {
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 80px;
-  color: #ffffff;
+  margin-bottom: 60px;
+  color: #fff;
   padding-left: 5px;
-  /* reduce to balance with text */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.about-section .section-title.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* Flex container for box + description */
+/* Flex container for intro box + text */
 .about-content {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 60px;
-  /* more spacing before cards */
 }
 
-/* We Speak Web3 box */
+/* “We Speak Web3” box */
 .about-box {
   background: linear-gradient(225deg, #159A9C, #002333);
-  color: #ffffff;
+  color: #fff;
   border-radius: 16px;
   width: 180px;
   height: 100px;
@@ -495,84 +501,109 @@ header {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out 0.2s, transform 0.6s ease-out 0.2s;
 }
-
+.about-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .about-box .box-top {
   font-size: 1.4rem;
   font-weight: 600;
-  margin-bottom: 0px;
-  margin-top: 60px;
   font-family: 'Poppins', sans-serif;
 }
-
 .about-box .box-bottom {
   font-size: 2rem;
   font-weight: 800;
-  color: #ffffff;
   line-height: 1.2;
-  margin-top: 5px;
-  margin-bottom: 60px;
   letter-spacing: 2px;
 }
 
-/* Text section next to the box */
+/* Intro text next to box */
 .about-text {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out 0.4s, transform 0.6s ease-out 0.4s;
 }
-
+.about-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .about-description {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #ffffff;
 }
-
 .about-description .highlight {
   color: #159A9C;
   font-weight: 600;
 }
 
-/* === CARD GRID === */
+/* Card grid */
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
   margin-top: 40px;
 }
-
 .about-card {
   background: transparent;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(180, 190, 201, 0.1);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  border: 1px solid rgba(180,190,201,0.1);
   backdrop-filter: blur(6px);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
 }
-
+.about-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
 .about-icon {
   width: 60px;
   height: 60px;
-  padding: 20px 0px;
-  object-fit: contain;
+  margin-bottom: 16px;
 }
-
 .about-card:hover {
-  box-shadow: 0 10px 30px rgba(0, 255, 213, 0.1);
-  border: 2px solid rgba(180, 190, 201, 0.2);
+  box-shadow: 0 10px 30px rgba(0,255,213,0.1);
+  border-color: rgba(180,190,201,0.2);
 }
-
 .about-card h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  font-weight: 700;
   color: #159A9C;
 }
-
 .about-card p {
-  color: #ffffff;
   font-size: 1rem;
   line-height: 1.6;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 20px 80px;
+  }
+  .about-section .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    padding-left: 0;
+  }
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about-box {
+    margin: 0 auto;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* HOW WE WORK Section */
