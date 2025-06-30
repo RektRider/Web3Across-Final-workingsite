@@ -110,20 +110,7 @@ header {
 }
 
 /* === DESKTOP === */
-@media (min-width: 769px) {
-  .nav-links {
-    display: flex !important;
-    position: static !important;
-    background: none;
-    box-shadow: none;
-    flex-direction: row;
-    padding: 0;
-  }
 
-  .menu-toggle {
-    display: none !important;
-  }
-}
 
 /* === MOBILE === */
 @media (max-width: 768px) {
