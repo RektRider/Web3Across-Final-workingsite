@@ -7,6 +7,13 @@ const navLinks = document.querySelector('.nav-links');
 menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('active');
   navLinks.classList.toggle('active');
+
+  // Add or remove body scroll lock
+  if (navLinks.classList.contains('active')) {
+    document.body.classList.add('no-scroll');
+  } else {
+    document.body.classList.remove('no-scroll');
+  }
 });
 
 let lastScrollTop = 0;
@@ -14,9 +21,11 @@ let lastScrollTop = 0;
 window.addEventListener("scroll", () => {
   if (navLinks.classList.contains("active")) {
     navLinks.classList.remove("active");
-    menuToggle.classList.remove("active"); // ✅ Match class name used above
+    menuToggle.classList.remove("active");
+    document.body.classList.remove("no-scroll"); 
   }
 });
+
 
 // Modal Form
  function openModal() {
