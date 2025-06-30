@@ -342,52 +342,52 @@ header {
 }
 
 
-/* === MEDIA PARTNERS SECTION === */
+/* === MEDIA PARTNERS SECTION (UPDATED) === */
 .media-logos {
   background: #050d17;
-  padding: 100px 0;
+  padding: 80px 0 60px;      /* reduced top padding from 100px→80px, bottom to 60px */
   overflow: hidden;
 }
-.media-logos .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  text-align: center;
-}
+
 .media-logos .media-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 10px;
 }
+
 .media-logos .media-subtext {
   font-size: 1.125rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 40px;
 }
+
+/* Footer banner (the “And 300+ additional…” line) */
 .media-logos .footer-banner {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.75rem;        /* down from 0.9rem → smaller */
   font-weight: 300;
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 50px;
-  padding-top: 20px;
+  margin-top: 20px;          /* tighter spacing above */
+  padding-top: 10px;         /* smaller top padding */
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* scrolling logos */
+/* Logos row */
 .scroller-row {
   overflow: hidden;
   white-space: nowrap;
   margin: 20px 0;
 }
+
 .logo-track {
   display: flex;
   gap: 60px;
   animation: scroll-left 100s linear infinite;
   width: max-content;
 }
+
 .logo-track img {
   height: 120px;
   object-fit: contain;
@@ -398,12 +398,13 @@ header {
   filter: grayscale(0%) brightness(1.1);
   opacity: 1;
 }
+
 @keyframes scroll-left {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-66.6666%); }
 }
 
-/* fade‑up utility */
+/* Fade‑up utility (if you’re using it here too) */
 .fade-up {
   opacity: 0;
   transform: translateY(20px);
@@ -414,8 +415,11 @@ header {
   transform: translateY(0);
 }
 
-/* responsive tweaks */
+/* Responsive tweaks */
 @media (max-width: 768px) {
+  .media-logos {
+    padding: 60px 0 40px;
+  }
   .media-logos .media-title {
     font-size: 1.8rem;
     margin-bottom: 8px;
@@ -439,6 +443,11 @@ header {
   }
   .media-logos .media-subtext {
     font-size: 0.85rem;
+  }
+  .media-logos .footer-banner {
+    font-size: 0.65rem;     /* extra small on very small phones */
+    margin-top: 12px;
+    padding-top: 6px;
   }
 }
 
