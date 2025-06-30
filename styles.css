@@ -620,6 +620,8 @@ header {
 @media (max-width: 768px) {
   .about-section {
     padding: 60px 20px 80px;
+    text-align: left;
+    align-items: left;
   }
 
   .about-section .section-title {
