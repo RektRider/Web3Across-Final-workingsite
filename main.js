@@ -93,6 +93,19 @@ document.querySelectorAll('.logo-track').forEach(track => {
   track.innerHTML += track.innerHTML;
 });
 
+// Fade‑up scroll animations for Media Partners
+const fadeObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      fadeObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+document.querySelectorAll('.media-logos .fade-up').forEach(el => {
+  fadeObserver.observe(el);
+});
 
 
 // PR Pricing Card Flip
