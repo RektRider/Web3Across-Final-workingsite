@@ -673,11 +673,11 @@ header {
 }
 
 
-/* HOW WE WORK Section */
+/* === HOW WE WORK Section === */
 .how-we-work {
   background: transparent;
   color: #fff;
-  padding: 80px 100px;
+  padding: 80px 20px;
   font-family: inherit;
 }
 
@@ -693,31 +693,29 @@ header {
   margin-bottom: 40px;
 }
 
-/* Grid Layout */
 .how-work-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
 }
 
+/* === Asymmetric Layout for Larger Screens === */
 @media (min-width: 768px) {
   .how-work-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
   }
 
-  /* Card 1 spans 2 columns */
   .how-work-card.long:first-of-type {
     grid-column: 1 / span 2;
   }
 
-  /* Card 7 spans 2 columns */
   .how-work-card.long:last-of-type {
     grid-column: 2 / span 2;
   }
 }
 
-/* Base Card Styling */
+/* === Card Styling === */
 .how-work-card {
   background: transparent;
   border: 0.5px solid rgba(180, 190, 201, 0.1);
@@ -729,8 +727,11 @@ header {
   transition: transform 0.3s ease;
   transform-style: preserve-3d;
   perspective: 600px;
+  opacity: 0;
+  transform: translateY(50px);
 }
 
+/* Hover Effects */
 .how-work-card:hover {
   box-shadow: 0 10px 30px rgba(0, 255, 213, 0.1);
   border: 0.5px solid #159A9C;
@@ -740,17 +741,38 @@ header {
   color: #159A9C;
 }
 
-/* Headings inside cards */
+/* Headings */
 .how-work-card h3 {
   color: #ffffff;
   font-size: 1.5rem;
   margin-bottom: 12px;
 }
 
-/* Paragraph text */
+/* Paragraphs */
 .how-work-card p {
   line-height: 1.6;
   opacity: 0.9;
+}
+
+/* === Mobile Adjustments === */
+@media (max-width: 768px) {
+  .how-work-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .how-work-card {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .how-work-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .how-work-card p {
+    font-size: 0.95rem;
+  }
 }
 
 
