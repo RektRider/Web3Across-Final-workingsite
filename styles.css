@@ -761,6 +761,21 @@ header {
   opacity: 0.9;
 }
 
+@media (max-width: 767px) {
+  .how-work-card {
+    width: 100%;
+    padding: 20px 16px;
+  }
+
+  .how-work-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .how-work-card p {
+    font-size: 0.95rem;
+  }
+}
+
 
 /* === SERVICES SECTION === */
 .services-section {
