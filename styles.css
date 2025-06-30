@@ -147,27 +147,24 @@ header {
 
 
 
-.nav-links {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 100vw; /* full width */
-  max-width: 100vw;
-  overlflow-x: hidden;
-  background: #002333;
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  z-index: 1000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  border-radius: 0 0 12px 12px;
-  box-sizing: border-box;
-}
+  .nav-links {
+    display: none;
+    position: fixed;     
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 80vw;          
+    max-width: 300px;
+    background: #002333;
+    backdrop-filter: blur(10px);
+    padding: 60px 20px;   
+    box-sizing: border-box;
+    overflow-y: auto;     
+    z-index: 1000;
+  }
 
   .nav-links.active {
-    display: flex;
+    display: block;
     animation: slideDown 0.3s ease-out;
   }
 
