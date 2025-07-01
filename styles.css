@@ -797,6 +797,30 @@ header {
   }
 }
 
+@media (max-width: 480px) {
+  .how-we-work {
+    padding: 60px 20px;
+  }
+
+  .how-work-container h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .how-work-card {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .how-work-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .how-work-card p {
+    font-size: 0.95rem;
+  }
+}  
+
 
 /* === SERVICES SECTION === */
 .services-section {
