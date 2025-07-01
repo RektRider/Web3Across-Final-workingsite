@@ -756,83 +756,47 @@ header {
   font-size: 1rem;
 }
 
-/* === HOW WE WORK — MOBILE & SMALL MOBILE FIXES === */
+/* === Asymmetric Layout for Larger Screens === */
+@media (min-width: 768px) {
+  .how-work-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+  }
 
-/* General mobile styles for screens up to 768px */
+  .how-work-card.long:first-of-type {
+    grid-column: 1 / span 2;
+  }
+
+  .how-work-card.long:last-of-type {
+    grid-column: 2 / span 2;
+  }
+}
+
+/* === Mobile Adjustments ONLY === */
 @media (max-width: 768px) {
-    /* Ensure the main container for the cards is a single-column grid */
-    .how-work-grid {
-        display: grid; /* Use grid for layout */
-        grid-template-columns: 1fr; /* Single column for mobile */
-        gap: 20px; /* Increased gap for better visual separation between cards */
-        padding: 0 20px; /* Add horizontal padding to the grid container */
-        box-sizing: border-box; /* Include padding in the element's total width */
-    }
+  .how-we-work {
+    padding: 60px 20px;
+  }
 
-    /* Styles for individual work cards */
-    .how-work-card {
-        width: 100%; /* Make card take full width of its parent (the grid column) */
-        max-width: 400px; /* Optional: set a max-width for cards on larger mobile devices/tablets to prevent them from becoming too wide */
-        margin: 0 auto; /* Center the card horizontally within its column */
-        padding: 24px 20px; /* Slightly increased padding for better content spacing */
-        min-height: auto; /* Ensure height adjusts to content */
-        background-color: #1a1a2e; /* Example: Assuming a dark background for the cards based on the image */
-        border-radius: 12px; /* Example: Add some rounded corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow for depth */
+  .how-work-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
 
-        /* Animation related properties - ensure these are handled correctly */
-        opacity: 1; /* Make sure cards are visible by default on load */
-        transform: translateY(0); /* Make sure cards are in their default position by default */
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Keep the transition for potential JS animations */
-    }
+  .how-work-card {
+    padding: 20px;
+    min-height: auto;
+  }
 
-    /* Heading styles for cards */
-    .how-work-card h3 {
-        font-size: 1.5rem; /* Slightly larger for better readability */
-        margin-bottom: 10px; /* Space between heading and paragraph */
-        color: #ffffff; /* Example: White text for headings */
-    }
+  .how-work-card h3 {
+    font-size: 1.2rem;
+  }
 
-    /* Paragraph styles for cards */
-    .how-work-card p {
-        font-size: 1rem; /* Standard readable size */
-        line-height: 1.6; /* Increased line height for better readability of longer text */
-        color: #cccccc; /* Example: Lighter grey text for paragraphs */
-    }
+  .how-work-card p {
+    font-size: 0.95rem;
+  }
 }
 
-/* Specific adjustments for very small mobile screens (e.g., <= 480px) */
-@media (max-width: 480px) {
-    /* Adjust grid padding for smaller screens */
-    .how-work-grid {
-        padding: 0 15px; /* Less horizontal padding for smaller screens */
-    }
-
-    /* Card padding for smaller screens */
-    .how-work-card {
-        padding: 20px 18px; /* Slightly reduced padding */
-    }
-
-    /* Heading font size for smaller screens */
-    .how-work-card h3 {
-        font-size: 1.3rem; /* Further reduced for very small screens */
-    }
-
-    /* Paragraph font size and line height for smaller screens */
-    .how-work-card p {
-        font-size: 0.95rem; /* Slightly smaller for very small screens */
-        line-height: 1.5; /* Adjusted line height */
-    }
-
-    /* Adjust the main "How we Work?" title if it's within a specific class */
-    /* Assuming you have a class for the main title, e.g., '.section-title' or similar */
-    .section-title { /* Replace .section-title with your actual class for the "How we Work?" heading */
-        font-size: 2.2rem; /* Adjust as needed for the main title */
-        padding: 40px 20px 20px; /* Add top/bottom padding to the main title area */
-        text-align: center; /* Center the title */
-        color: #ffffff; /* Example: White text for the main title */
-    }
-}
 
 /* === SERVICES SECTION === */
 .services-section {
