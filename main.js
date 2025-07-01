@@ -111,7 +111,7 @@ document.querySelectorAll('.media-logos .fade-up').forEach(el => {
 document.addEventListener("DOMContentLoaded", () => {
 
 
-// About Section Scroll Animation  
+  // About Section Scroll Animation  
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -333,3 +333,18 @@ document.querySelectorAll('.card-section').forEach(section => {
     section.style.background = 'rgba(255, 255, 255, 0.02)';
   });
 });
+
+// Fade-up animation for Design+Dev Section
+const designDevSection = document.querySelector('.designdev-section');
+
+const designDevObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.2 });
+
+if (designDevSection) {
+  designDevObserver.observe(designDevSection);
+}
