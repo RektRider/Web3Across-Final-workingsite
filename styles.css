@@ -211,7 +211,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 180px 100px;
+  padding: 200px 100px;
+  padding-bottom: 250px;
   background-color: transparent;
   color: white;
   position: relative;
@@ -234,7 +235,7 @@ header {
 
 .hero-image {
   flex: 1;
-  padding-top: 50px;
+  padding-top: 0;
   display: flex;
   justify-content: flex-end;
 }
