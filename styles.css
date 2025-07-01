@@ -212,6 +212,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 180px 100px;
+  padding-top: 300px;
   background-color: transparent;
   color: white;
   position: relative;
@@ -1273,6 +1274,7 @@ header {
   margin-bottom: 10px;
   line-height: 0.8;
 }
+
 /* Fade-up animation */
 .pricing-section h2,
 .pricing-subtext {
@@ -1286,6 +1288,7 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
 .pricing-section .flip-card {
   opacity: 0;
   transform: translateY(20px);
@@ -1328,7 +1331,8 @@ header {
   }
 
   .flip-card {
-    width: 75vw; /* Wider than mobile but not full */
+    width: 75vw;
+    /* Wider than mobile but not full */
     min-height: 460px;
     flex: 0 0 auto;
     scroll-snap-align: start;
