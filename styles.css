@@ -675,11 +675,6 @@ header {
   }
 }
 
-  .about-grid {
-    grid-template-columns: 1fr;
-    padding: 0 10px;
-  }
-
 
 /* === HOW WE WORK Section === */
 .how-we-work {
