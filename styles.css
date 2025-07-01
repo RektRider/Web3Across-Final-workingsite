@@ -990,7 +990,7 @@ header {
 }
 
 
-/* === PRICING SECTION === */
+/* === PRICING PR PLANS SECTION === */
 .pricing-section {
   padding: 80px 60px;
   background: transparent;
@@ -1273,6 +1273,148 @@ header {
   margin-bottom: 10px;
   line-height: 0.8;
 }
+
+/* === MOBILE TWEAKS FOR PRICING SECTION === */
+@media (max-width: 768px) {
+  .pricing-section {
+    padding: 60px 20px;
+  }
+
+  .pricing-section h2 {
+    font-size: 26px;
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .pricing-subtext {
+    font-size: 15px;
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .pricing-slider-container {
+    padding: 20px 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pricing-slider {
+    padding: 0 16px;
+    gap: 16px;
+  }
+
+  .flip-card {
+    width: 75vw; /* Wider than mobile but not full */
+    min-height: 460px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .pricing-card {
+    padding: 24px;
+    min-height: 420px;
+  }
+
+  .pricing-card h3 {
+    font-size: 20px;
+    padding-left: 16px;
+  }
+
+  .pricing-card .price {
+    font-size: 26px;
+    padding-left: 16px;
+  }
+
+  .feature-list {
+    padding: 16px;
+    gap: 10px;
+  }
+
+  .feature-list li {
+    font-size: 14px;
+  }
+
+  .flip-btn,
+  .flip-back-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-section {
+    padding: 40px 10px;
+  }
+
+  .pricing-section h2 {
+    font-size: 22px;
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .pricing-subtext {
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 0 10px;
+    text-align: left;
+  }
+
+  .pricing-slider-container {
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pricing-slider {
+    padding: 0 10px;
+    gap: 12px;
+  }
+
+  .flip-card {
+    width: 85vw; /* Full card and peek of next */
+    min-height: 440px;
+    scroll-snap-align: start;
+  }
+
+  .pricing-card {
+    padding: 20px;
+    min-height: 400px;
+  }
+
+  .pricing-card h3 {
+    font-size: 17px;
+    padding-left: 12px;
+  }
+
+  .pricing-card .price {
+    font-size: 20px;
+    padding-left: 12px;
+  }
+
+  .feature-list {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .feature-list li {
+    font-size: 12.5px;
+    padding-left: 1.2rem;
+  }
+
+  .feature-list li::before {
+    font-size: 0.9rem;
+  }
+
+  .flip-btn,
+  .flip-back-btn {
+    font-size: 12.5px;
+    padding: 6px 14px;
+    margin-left: 0;
+  }
+}
+
 
 
 /* === PRICING EXTRAS: SOCIAL GROWTH === */
