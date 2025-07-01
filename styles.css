@@ -509,7 +509,8 @@ header {
   background: linear-gradient(225deg, #159A9C, #002333);
   color: #ffffff;
   border-radius: 16px;
-  width: 180px;
+  width: 100%;
+  max-width: 320px;
   height: 100px;
   text-align: center;
   box-shadow: 0 0 12px rgba(0, 255, 213, 0.15);
@@ -523,8 +524,7 @@ header {
 .about-box .box-top {
   font-size: 1.4rem;
   font-weight: 700;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin-bottom: 0;
 }
 
 .about-box .box-bottom {
@@ -533,7 +533,6 @@ header {
   color: #ffffff;
   line-height: 1.2;
   margin-top: 5px;
-  margin-bottom: 0px;
   letter-spacing: 2px;
 }
 
@@ -606,20 +605,22 @@ header {
   .about-section .section-title {
     font-size: 28px;
     margin-bottom: 40px;
-    padding-left: 0px;
+    padding-left: 0;
+    text-align: left;
   }
 
   .about-content {
     flex-direction: column;
     gap: 30px;
     text-align: left;
-    align-items: left;
+    align-items: flex-start;
   }
 
   .about-box {
-    width: 400px;
+    width: 100%;
+    max-width: 320px;
     height: 90px;
-    padding: 0 40px;
+    padding: 0 20px;
   }
 
   .about-box .box-top {
@@ -632,11 +633,17 @@ header {
 
   .about-text {
     text-align: left;
+    width: 100%;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    padding: 0;
   }
 
   .about-grid {
     grid-template-columns: 1fr;
-    padding: 0 20px;
+    padding: 0;
   }
 }
 
@@ -645,33 +652,30 @@ header {
     padding: 40px 10px 60px;
   }
 
-  .about-content {
-    align-items: left;
+  .about-section .section-title {
+    font-size: 24px;
+    padding: 0;
     text-align: left;
   }
 
   .about-box {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 80px;
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   .about-box .box-top {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .about-box .box-bottom {
-    font-size: 1.8rem;
-  }
-
-  .about-section .section-title {
-    font-size: 24px;
-    padding: 0 20px;
+    font-size: 1.6rem;
   }
 
   .about-description {
-    font-size: 1rem;
-    padding: 0 20px;
+    font-size: 0.95rem;
+    padding: 0;
   }
 }
 
