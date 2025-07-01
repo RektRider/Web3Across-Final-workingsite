@@ -1395,7 +1395,7 @@ header {
     white-space: nowrap;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    padding: 0 8px;
+    padding: 50px o;
     margin: 0;
     height: auto;
   }
@@ -1405,7 +1405,7 @@ header {
     flex-wrap: nowrap;
     flex-direction: row;
     gap: 12px;
-    padding: 0 4px;
+    padding: 0 56px;
     align-items: stretch;
   }
 
@@ -1413,7 +1413,7 @@ header {
     flex: 0 0 auto;
     width: 280px;
     min-height: 440px;
-    padding: 0;
+    padding: 10px;
     scroll-snap-align: start;
     transform: none !important;
     transition: none !important;
@@ -1451,8 +1451,8 @@ header {
 
   .feature-list {
     font-size: 13px;
-    padding: 10px 12px;
-    gap: 8px;
+    padding: 10px 6px;
+    gap: 0px;
   }
 
   .feature-list li {
