@@ -1386,12 +1386,14 @@ header {
 
   .pricing-slider-container {
     overflow-x: auto;
+    overflow-y: hidden !important; /* prevent up/down scroll */
     white-space: nowrap;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     padding: 24px 10px;
     margin: 0 auto;
     scrollbar-width: none;
+    height: auto;
   }
 
   .pricing-slider-container::-webkit-scrollbar {
@@ -1404,15 +1406,22 @@ header {
     gap: 12px;
     padding: 0;
     margin: 0;
+    height: auto;
+    align-items: flex-start; /* stop vertical bouncing */
   }
 
   .flip-card {
     flex: 0 0 auto;
     width: 260px;
-    min-height: 420px;
+    height: 100%; /* prevent stretching */
+    min-height: 400px;
     scroll-snap-align: start;
     transform: none !important;
     transition: none !important;
+  }
+
+  .flip-card-inner {
+    height: 100%;
   }
 
   .pricing-card {
