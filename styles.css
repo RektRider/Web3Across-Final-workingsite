@@ -643,33 +643,6 @@ header {
 
   .about-grid {
     grid-template-columns: 1fr;
-    padding: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-section {
-    padding: 40px 10px 60px;
-  }
-
-  .about-box {
-    height: 70px;
-    padding: 0 14px;
-    gap: 8px;
-  }
-
-  .about-box .box-top,
-  .about-box .box-bottom {
-    font-size: 1rem;
-  }
-
-  .about-description {
-    font-size: 1rem;
-    padding: 0 20px;
-  }
-
-  .about-section .section-title {
-    font-size: 24px;
     padding: 0 20px;
   }
 }
