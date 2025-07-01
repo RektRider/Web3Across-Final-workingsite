@@ -1367,105 +1367,87 @@ header {
 }
 
 @media (max-width: 480px) {
+  .pricing-section h2 {
+    font-size: 22px;
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .pricing-subtext {
+    font-size: 13px;
+    padding: 0 20px;
+    text-align: left;
+  }
+
   .pricing-slider-container {
     overflow-x: auto;
-    overflow-y: hidden;
-    height: 400px; /* same as or slightly more than .flip-card height */
-    padding: 16px 10px;
+    white-space: nowrap;
     scroll-snap-type: x mandatory;
-    display: flex;
-    align-items: flex-start;
+    padding: 32px 10px 32px 10px;
+    margin: 0 auto;
+    max-width: 100%;
   }
 
   .pricing-slider {
     display: flex;
     flex-direction: row;
-    gap: 12px;
-    height: 100%;
-    padding: 0 8px;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    scroll-padding: 0;
-    align-items: flex-start;
-  }
-
-  
-  .pricing-section {
-    padding: 50px 16px;
-  }
-
-  .pricing-section h2 {
-    font-size: 22px;
-    padding: 0 10px;
-  }
-
-  .pricing-subtext {
-    font-size: 13px;
-    padding: 0 10px;
-    margin-bottom: 24px;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
   }
 
   .flip-card {
-    width: 240px;
-    height: 100%; 
     flex: 0 0 auto;
     scroll-snap-align: start;
-    padding: 0;
+    width: 280px;
+    min-height: 440px;
+    margin-right: 12px;
   }
 
-  .flip-card-inner,
-  .flip-card-front,
-  .flip-card-back {
-    height: 100%;
-  }
-
-  .flip-card-front .pricing-card,
-  .flip-card-back .pricing-card.back {
-    height: 100%;
-    box-sizing: border-box;
-    padding: 16px;
-    overflow-y: auto;
+  .pricing-card {
+    padding: 20px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .pricing-card h3 {
-    font-size: 15px;
-    padding-left: 0;
-    margin-bottom: 8px;
+    font-size: 18px;
+    padding-left: 12px;
   }
 
   .pricing-card .price {
-    font-size: 18px;
-    padding-left: 0;
-    margin-bottom: 12px;
+    font-size: 22px;
+    padding-left: 12px;
   }
 
   .feature-list {
-    padding: 8px;
-    gap: 6px;
+    padding: 12px;
+    font-size: 13px;
+    gap: 8px;
   }
 
   .feature-list li {
-    font-size: 12px;
-    padding-left: 1.2rem;
+    font-size: 13px;
+    line-height: 1.4;
   }
 
   .flip-btn,
   .flip-back-btn {
-    font-size: 12px;
-    padding: 6px 12px;
+    font-size: 13px;
+    padding: 8px 16px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
-  .flip-card-back .pricing-card.back h3 {
-    font-size: 17px;
-  }
-
-  .flip-card-back .pricing-card.back p {
-    font-size: 12px;
-    line-height: 1.4;
+  .pricing-card.back {
+    padding: 20px;
   }
 
   .back-feature-list {
-    padding-left: 8px;
+    padding-left: 10px;
   }
 }
 
