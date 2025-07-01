@@ -1383,7 +1383,7 @@ header {
     overflow-x: auto;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
-    padding: 32px 10px 32px 10px;
+    padding: 32px 10px;
     margin: 0 auto;
     max-width: 100%;
   }
@@ -1400,7 +1400,7 @@ header {
     flex: 0 0 auto;
     scroll-snap-align: start;
     width: 280px;
-    min-height: 440px;
+    min-height: 460px;
     margin-right: 12px;
   }
 
@@ -1410,6 +1410,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: none !important;
+    transform: none !important;
+  }
+
+  .flip-card:hover .pricing-card {
+    transform: none !important;
+    box-shadow: none !important;
   }
 
   .pricing-card h3 {
