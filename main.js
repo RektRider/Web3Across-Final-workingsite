@@ -5,26 +5,19 @@ const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.querySelector('.nav-links');
 
 menuToggle.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('active');
   menuToggle.classList.toggle('active');
-  navLinks.classList.toggle('active');
+});
 
-  // Add or remove body scroll lock
+// Close menu on scroll (optional)
+window.addEventListener('scroll', () => {
   if (navLinks.classList.contains('active')) {
-    document.body.classList.add('no-scroll');
-  } else {
+    navLinks.classList.remove('active');
+    menuToggle.classList.remove('active');
     document.body.classList.remove('no-scroll');
   }
 });
 
-let lastScrollTop = 0;
-
-window.addEventListener("scroll", () => {
-  if (navLinks.classList.contains("active")) {
-    navLinks.classList.remove("active");
-    menuToggle.classList.remove("active");
-    document.body.classList.remove("no-scroll");
-  }
-});
 
 
 // Modal Form
