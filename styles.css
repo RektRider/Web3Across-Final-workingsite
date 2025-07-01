@@ -1760,7 +1760,7 @@ header {
 
   .addon-pricing-wrapper {
     flex-direction: column;
-    margin: 0 8px;
+    margin: 0 5px;
     padding: 2rem 0;
   }
 
@@ -1962,6 +1962,108 @@ header {
   -webkit-text-fill-color: transparent;
   color: #00ffd5;
 }
+
+/* === Fade-up animation === */
+.designdev-section h2,
+.designdev-section .section-subtext,
+.designdev-section .pricing-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.designdev-section.visible h2,
+.designdev-section.visible .section-subtext,
+.designdev-section.visible .pricing-card {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+
+/* === Tablet (max-width: 768px) === */
+@media (max-width: 768px) {
+  .designdev-section {
+    padding: 60px 20px;
+  }
+
+  .designdev-section .pricing-card {
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .designdev-section .card-section {
+    padding: 24px;
+    border-radius: 16px;
+    border: none;
+  }
+
+  .designdev-section .design-section {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .designdev-section .dev-section {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .designdev-section .card-section h2 {
+    font-size: 22px;
+  }
+
+  .designdev-section .card-section p,
+  .designdev-section .card-section ul li {
+    font-size: 14px;
+  }
+
+  .designdev-section .price {
+    font-size: 1rem;
+  }
+}
+
+
+/* === Mobile (max-width: 480px) === */
+@media (max-width: 480px) {
+  .designdev-section {
+    padding: 40px 10px;
+  }
+
+  .section-heading {
+    font-size: 22px;
+    padding: 0 16px;
+    text-align: left;
+  }
+
+  .section-subtext {
+    font-size: 12px;
+    padding: 0 16px;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+
+  .designdev-section .pricing-card {
+    padding: 20px;
+  }
+
+  .designdev-section .card-section {
+    padding: 20px;
+  }
+
+  .designdev-section .card-section h2 {
+    font-size: 20px;
+  }
+
+  .designdev-section .card-section p,
+  .designdev-section .card-section ul li {
+    font-size: 13px;
+  }
+
+  .designdev-section .price {
+    font-size: 0.95rem;
+  }
+}
+
 
 /* === Why Web3Across Section === */
 .why-web3across {
