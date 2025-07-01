@@ -890,6 +890,71 @@ header {
   object-fit: contain;
 }
 
+/* === RESPONSIVE SERVICES SECTION === */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 20px 100px;
+  }
+
+  .services-section h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .services-subtext {
+    font-size: 14px;
+    margin-bottom: 40px;
+    transform: translateY(0);
+    opacity: 1;
+    padding: 0 10px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .service-card {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .service-card h3 {
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+  }
+
+  .services-icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section h2 {
+    font-size: 22px;
+  }
+
+  .services-subtext {
+    font-size: 13px;
+  }
+
+  .service-card h3 {
+    font-size: 16px;
+  }
+
+  .service-card p {
+    font-size: 13px;
+  }
+}
+
 
 /* === PRICING SECTION === */
 .pricing-section {
