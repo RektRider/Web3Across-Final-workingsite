@@ -1695,6 +1695,83 @@ header {
   font-weight: 600;
 }
 
+@media (max-width: 480px) {
+  .growth-section {
+    padding: 40px 16px 60px;
+  }
+
+  .section-heading {
+    font-size: 22px;
+    padding: 0 10px;
+    text-align: left;
+  }
+
+  .section-subtext {
+    font-size: 13px;
+    padding: 0 10px;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+
+  .addon-pricing-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+    margin: 0;
+  }
+
+  .addon-card {
+    min-width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .addon-card h3 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .platform-toggle-group {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .platform-icon {
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+    border-radius: 8px;
+  }
+
+  .platform-toggle {
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 8px;
+  }
+
+  .addon-card label,
+  .addon-card p {
+    font-size: 14px;
+    margin: 0.75rem 0;
+  }
+
+  .range-slider {
+    height: 4px;
+  }
+
+  .range-slider::-webkit-slider-thumb,
+  .range-slider::-moz-range-thumb {
+    height: 14px;
+    width: 14px;
+  }
+
+  #userPrice,
+  #viewPrice {
+    font-size: 16px;
+  }
+}
+
 /* === PRICING EXTRAS: DESIGN + WEBDEV === */
 .designdev-section {
   display: block;
