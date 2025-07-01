@@ -606,7 +606,7 @@ header {
   .about-section .section-title {
     font-size: 28px;
     margin-bottom: 40px;
-    padding-left: 0;
+    padding-left: 20px;
   }
 
   .about-content {
@@ -630,20 +630,20 @@ header {
 
   .about-box .box-top,
   .about-box .box-bottom {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin: 0;
     white-space: nowrap;
     line-height: 1.2;
   }
 
   .about-box .box-bottom {
-    color: #159A9C;
+    color: #ffffff;
     font-weight: 800;
   }
 
   .about-grid {
     grid-template-columns: 1fr;
-    padding: 0 20px;
+    padding: 0;
   }
 }
 
