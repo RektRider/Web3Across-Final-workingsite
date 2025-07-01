@@ -1695,19 +1695,54 @@ header {
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .addon-pricing-wrapper {
+    flex-direction: column;
+    margin: 0 20px;
+    padding: 2rem 0;
+  }
+
+  .addon-card {
+    min-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .addon-card h3 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .addon-card p,
+  .addon-card label {
+    font-size: 14px;
+  }
+
+  .platform-toggle,
+  .platform-icon {
+    width: auto;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .range-slider {
+    margin-bottom: 0.75rem;
+  }
+}
+
+
 @media (max-width: 480px) {
   .growth-section {
     padding: 40px 16px 60px;
   }
 
-  .section-heading {
+  .growth-section .section-heading {
     font-size: 22px;
     text-align: left;
     padding: 0 8px;
     margin-bottom: 16px;
   }
 
-  .section-subtext {
+  .growth-section .section-subtext {
     font-size: 13px;
     text-align: left;
     padding: 0 8px;
@@ -1716,13 +1751,9 @@ header {
   }
 
   .addon-pricing-wrapper {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 16px;
-    padding: 0 8px;
-    margin: 0;
+    flex-direction: column;
+    margin: 0 8px;
+    padding: 2rem 0;
   }
 
   .addon-pricing-wrapper::-webkit-scrollbar {
