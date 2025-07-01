@@ -1368,7 +1368,7 @@ header {
 
 @media (max-width: 480px) {
   .pricing-section {
-    padding: 60px 16px 80px;
+    padding: 40px 10px;
   }
 
   .pricing-section h2 {
@@ -1382,39 +1382,32 @@ header {
     line-height: 1.5;
     text-align: left;
     padding: 0 10px;
+    margin-bottom: 24px;
   }
 
   .pricing-slider-container {
     overflow-x: auto;
-    overflow-y: hidden !important; /* prevent up/down scroll */
+    overflow-y: hidden;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    padding: 24px 10px;
-    margin: 0 auto;
-    scrollbar-width: none;
+    padding: 0;
+    margin: 0;
     height: auto;
-  }
-
-  .pricing-slider-container::-webkit-scrollbar {
-    display: none;
   }
 
   .pricing-slider {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     gap: 12px;
-    padding: 0;
-    margin: 0;
-    height: auto;
-    align-items: flex-start; /* stop vertical bouncing */
+    padding: 0 8px;
+    align-items: stretch;
   }
 
   .flip-card {
     flex: 0 0 auto;
-    width: 260px;
-    height: 100%; /* prevent stretching */
-    min-height: 400px;
+    width: 270px;
     scroll-snap-align: start;
     transform: none !important;
     transition: none !important;
@@ -1425,11 +1418,12 @@ header {
   }
 
   .pricing-card {
+    height: 100%;
     padding: 20px;
-    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
     transform: none !important;
     transition: none !important;
   }
@@ -1445,13 +1439,13 @@ header {
   }
 
   .pricing-card .price {
-    font-size: 22px;
+    font-size: 20px;
     padding-left: 8px;
   }
 
   .feature-list {
     font-size: 13px;
-    padding: 10px;
+    padding: 10px 12px;
     gap: 8px;
   }
 
