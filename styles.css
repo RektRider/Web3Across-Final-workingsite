@@ -643,7 +643,7 @@ header {
 
   .about-grid {
     grid-template-columns: 1fr;
-    padding: 0 20px;
+    padding: 0;
   }
 }
 
