@@ -1702,28 +1702,40 @@ header {
 
   .section-heading {
     font-size: 22px;
-    padding: 0 10px;
     text-align: left;
+    padding: 0 8px;
+    margin-bottom: 16px;
   }
 
   .section-subtext {
     font-size: 13px;
-    padding: 0 10px;
     text-align: left;
+    padding: 0 8px;
     margin-bottom: 32px;
+    line-height: 1.6;
   }
 
   .addon-pricing-wrapper {
-    flex-direction: column;
-    gap: 20px;
-    padding: 0 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 0 8px;
     margin: 0;
   }
 
+  .addon-pricing-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
   .addon-card {
-    min-width: 100%;
+    min-width: 260px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
     padding: 20px;
-    border-radius: 16px;
+    border-radius: 18px;
+    box-sizing: border-box;
   }
 
   .addon-card h3 {
@@ -1732,28 +1744,24 @@ header {
   }
 
   .platform-toggle-group {
-    flex-wrap: wrap;
-    justify-content: flex-start;
     gap: 8px;
-  }
-
-  .platform-icon {
-    width: 32px;
-    height: 32px;
-    padding: 6px;
-    border-radius: 8px;
+    flex-wrap: wrap;
   }
 
   .platform-toggle {
     font-size: 12px;
     padding: 6px 10px;
-    border-radius: 8px;
   }
 
   .addon-card label,
   .addon-card p {
-    font-size: 14px;
-    margin: 0.75rem 0;
+    font-size: 13px;
+    margin: 0.6rem 0;
+  }
+
+  #userPrice,
+  #viewPrice {
+    font-size: 16px;
   }
 
   .range-slider {
@@ -1765,12 +1773,8 @@ header {
     height: 14px;
     width: 14px;
   }
-
-  #userPrice,
-  #viewPrice {
-    font-size: 16px;
-  }
 }
+
 
 /* === PRICING EXTRAS: DESIGN + WEBDEV === */
 .designdev-section {
