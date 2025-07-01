@@ -599,47 +599,81 @@ header {
 
 /* === Mobile Responsiveness === */
 @media (max-width: 768px) {
+  .about-section {
+    padding: 60px 20px 80px;
+  }
+
+  .about-section .section-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    padding-left: 0;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+
   .about-box {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
     width: 100%;
-    max-width: 340px;
-    height: 70px;
-    margin: 0 auto;
-    padding: 0 10px;
-    gap: 6px;
+    height: 80px;
+    border-radius: 16px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    gap: 10px;
   }
 
   .about-box .box-top,
   .about-box .box-bottom {
     font-size: 1.2rem;
     margin: 0;
-    padding: 0;
     white-space: nowrap;
-    line-height: 1;
+    line-height: 1.2;
   }
 
   .about-box .box-bottom {
     color: #159A9C;
     font-weight: 800;
   }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 480px) {
+  .about-section {
+    padding: 40px 10px 60px;
+  }
+
   .about-box {
-    max-width: 300px;
-    height: 65px;
-    gap: 4px;
-    padding: 0 8px;
+    height: 70px;
+    padding: 0 14px;
+    gap: 8px;
   }
 
   .about-box .box-top,
   .about-box .box-bottom {
-    font-size: 1.05rem;
+    font-size: 1rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  .about-section .section-title {
+    font-size: 24px;
+    padding: 0 20px;
   }
 }
+
 
 /* === HOW WE WORK Section === */
 .how-we-work {
