@@ -1,4 +1,3 @@
-// main.js
 
 // Toggle Menu
 const menuToggle = document.getElementById('menuToggle');
@@ -9,7 +8,7 @@ menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('active');
 });
 
-// Close menu on scroll (optional)
+
 window.addEventListener('scroll', () => {
   if (navLinks.classList.contains('active')) {
     navLinks.classList.remove('active');
@@ -31,11 +30,10 @@ window.onclick = e => {
   if (e.target === document.getElementById("form-modal")) closeModal();
 };
 
-// 3) In your main.js (or inline), intercept and POST via fetch:
 document.getElementById("contactForm").addEventListener("submit", async function (e) {
-  e.preventDefault();               // don’t reload the page
+  e.preventDefault();            
   const form = e.target;
-  // collect values
+
   const payload = {
     name: form.name.value,
     project: form.project.value,
