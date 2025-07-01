@@ -606,7 +606,7 @@ header {
   .about-section .section-title {
     font-size: 28px;
     margin-bottom: 40px;
-    padding-left: 20px;
+    padding: 0 20px;
   }
 
   .about-content {
@@ -614,6 +614,7 @@ header {
     gap: 30px;
     text-align: left;
     align-items: left;
+    padding: 0 20px;
   }
 
   .about-box {
@@ -636,6 +637,7 @@ header {
 
   .about-grid {
     grid-template-columns: 1fr;
+    padding: 0 20px;
   }
 }
 
@@ -647,6 +649,7 @@ header {
   .about-content {
     align-items: left;
     text-align: left;
+    padding: 0 20px;
   }
 
   .about-box {
@@ -665,12 +668,19 @@ header {
 
   .about-section .section-title {
     font-size: 24px;
+    padding: 0 20px;
   }
 
   .about-description {
     font-size: 1rem;
+    padding: 0 20px;
   }
 }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
 
 
 /* === HOW WE WORK Section === */
