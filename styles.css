@@ -1367,6 +1367,29 @@ header {
 }
 
 @media (max-width: 480px) {
+  .pricing-slider-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 400px; /* same as or slightly more than .flip-card height */
+    padding: 16px 10px;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .pricing-slider {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    height: 100%;
+    padding: 0 8px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scroll-padding: 0;
+    align-items: flex-start;
+  }
+
+  
   .pricing-section {
     padding: 50px 16px;
   }
@@ -1382,26 +1405,26 @@ header {
     margin-bottom: 24px;
   }
 
-  .pricing-slider-container {
-    padding: 16px 10px;
-    scroll-padding: 0;
-  }
-
-  .pricing-slider {
-    gap: 12px;
-    padding: 0 8px;
-  }
-
   .flip-card {
     width: 240px;
-    min-height: 360px;
-    padding: 0;
+    height: 100%; 
+    flex: 0 0 auto;
     scroll-snap-align: start;
+    padding: 0;
+  }
+
+  .flip-card-inner,
+  .flip-card-front,
+  .flip-card-back {
+    height: 100%;
   }
 
   .flip-card-front .pricing-card,
   .flip-card-back .pricing-card.back {
+    height: 100%;
+    box-sizing: border-box;
     padding: 16px;
+    overflow-y: auto;
   }
 
   .pricing-card h3 {
