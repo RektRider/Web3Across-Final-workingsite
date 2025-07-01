@@ -524,6 +524,7 @@ header {
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 0;
+  margin-top: 5px;
 }
 
 .about-box .box-bottom {
@@ -620,6 +621,7 @@ header {
     max-width: 320px;
     height: 90px;
     padding: 0 20px;
+    white-space: nowrap; /* Force single line */
   }
 
   .about-box .box-top {
@@ -662,6 +664,7 @@ header {
     max-width: 300px;
     height: 80px;
     padding: 0 15px;
+    white-space: nowrap; /* Force single line */
   }
 
   .about-box .box-top {
