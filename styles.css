@@ -1473,8 +1473,16 @@ header {
     padding: 20px;
   }
 
+  .pricing-card.back p {
+    font-size: 12px;
+  }
+
   .back-feature-list {
     padding-left: 10px;
+  }
+
+  .back-feature-list li {
+    font-size: 13px;
   }
 }
 
