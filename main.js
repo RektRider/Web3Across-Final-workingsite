@@ -109,7 +109,9 @@ document.querySelectorAll('.media-logos .fade-up').forEach(el => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  // About Section Scroll Animation
+
+
+// About Section Scroll Animation  
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -142,6 +144,24 @@ const howWorkObserver = new IntersectionObserver((entries, observer) => {
 
 document.querySelectorAll('.how-work-card').forEach(card => {
   howWorkObserver.observe(card);
+});
+
+
+// Scroll animation for Services section
+const serviceObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = 'translateY(0)';
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.service-card, .services-subtext').forEach(el => {
+  el.style.opacity = 0;
+  el.style.transform = 'translateY(30px)';
+  serviceObserver.observe(el);
 });
 
 
