@@ -449,17 +449,17 @@ header {
 
 @media (max-width: 480px) {
   .media-logos .media-title {
-    font-size: 1.5rem;
+    font-size: 22px;
   }
 
   .media-logos .media-subtext {
-    font-size: 0.85rem;
+    font-size: 13px;
   }
 
   .media-logos .footer-banner {
-    font-size: 0.65rem;
-    margin-top: 12px;
-    padding-top: 6px;
+    font-size: 12px;
+    margin-top: 15px;
+    padding-top: 8px;
   }
 }
 
