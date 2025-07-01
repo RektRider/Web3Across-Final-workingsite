@@ -509,8 +509,7 @@ header {
   background: linear-gradient(225deg, #159A9C, #002333);
   color: #ffffff;
   border-radius: 16px;
-  width: 100%;
-  max-width: 320px;
+  width: 180px;
   height: 100px;
   text-align: center;
   box-shadow: 0 0 12px rgba(0, 255, 213, 0.15);
