@@ -523,7 +523,7 @@ header {
 .about-box .box-top {
   font-size: 1.4rem;
   font-weight: 700;
-  margin-bottom: 0;
+  margin-bottom: 5px;
   margin-top: 10px;
 }
 
