@@ -1407,7 +1407,9 @@ header {
 
   .flip-card {
     flex: 0 0 auto;
-    width: 270px;
+    width: 260px;
+    min-height: 480px;
+    padding: 0;
     scroll-snap-align: start;
     transform: none !important;
     transition: none !important;
