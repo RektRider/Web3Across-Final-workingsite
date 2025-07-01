@@ -348,3 +348,33 @@ const designDevObserver = new IntersectionObserver((entries) => {
 if (designDevSection) {
   designDevObserver.observe(designDevSection);
 }
+
+// Fade-up Animation for Why Web3Across
+const whySection = document.querySelector('.why-web3across');
+
+const whyObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.2 });
+
+if (whySection) {
+  whyObserver.observe(whySection);
+}
+
+// Fade-up Animation for Contact Section
+const contactSection = document.querySelector('.contact-section');
+
+const contactObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.2 });
+
+if (contactSection) {
+  contactObserver.observe(contactSection);
+}
