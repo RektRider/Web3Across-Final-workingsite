@@ -165,22 +165,33 @@ document.querySelectorAll('.service-card, .services-subtext').forEach(el => {
 });
 
 
-// Animate Pricing Cards on scroll
-const pricingObserver = new IntersectionObserver((entries, observer) => {
+// Animate Pricing PR Plans Section
+// Observer for Pricing Section Title + Subtext
+const pricingTextObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
       observer.unobserve(entry.target);
     }
   });
-}, {
-  threshold: 0.2
-});
+}, { threshold: 0.2 });
 
-// Attach observer to each card
-document.querySelectorAll('.pricing-section .flip-card').forEach(card => {
-  pricingObserver.observe(card);
-});
+const pricingSection = document.querySelector('.pricing-section');
+if (pricingSection) pricingTextObserver.observe(pricingSection);
+
+// Observer for Flip Cards (individual card animations)
+const flipCardObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+const flipCards = document.querySelectorAll('.pricing-section .flip-card');
+flipCards.forEach(card => flipCardObserver.observe(card));
+
 
 // PR Pricing Card Flip
 // Flip card to back (on Learn More button click)
