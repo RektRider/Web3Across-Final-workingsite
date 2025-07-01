@@ -144,10 +144,15 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #001e2b;
-    /* adjust to match your theme */
+    background-color: transparent;
+    backdrop-filter: blur(12px);
     z-index: 1000;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  header {
+    padding: 12px 6px;
+    /* Reduce vertical spacing */
   }
 
   /* Show Menu Toggle */
@@ -206,8 +211,6 @@ header {
     overflow: hidden;
   }
 }
-
-
 
 
 /* === HERO SECTION === */
