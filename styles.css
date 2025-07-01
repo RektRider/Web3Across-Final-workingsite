@@ -745,6 +745,7 @@ header {
   line-height: 1.6;
   opacity: 0.9;
 }
+
 /* MOBILE FIXES */
 @media (max-width: 767px) {
   .how-work-grid {
@@ -755,32 +756,22 @@ header {
   }
 
   .how-work-card {
-    width: 90%;
-    min-height: auto;
-    padding: 20px;
-    opacity: 0;
+    width: 95%;
+    max-width: 400px;       
+    padding: 16px 20px;    
+    min-height: auto;       
+    opacity: 0;            
     transform: translateY(40px);
-    transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-out;
   }
 
   .how-work-card h3 {
     font-size: 1.2rem;
+    margin-bottom: 8px;
   }
-
   .how-work-card p {
-    font-size: 0.95rem;
-  }
-}
-
-/* TABLET FIXES */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .how-work-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .how-work-card.long:first-of-type,
-  .how-work-card.long:last-of-type {
-    grid-column: auto; /* Don't span 2 columns on tablet */
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 }
 
