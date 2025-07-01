@@ -899,6 +899,7 @@ header {
   .services-section h2 {
     font-size: 26px;
     margin-bottom: 20px;
+    text-align: left;
   }
 
   .services-subtext {
@@ -907,6 +908,7 @@ header {
     transform: translateY(0);
     opacity: 1;
     padding: 0 10px;
+    text-align: left;
   }
 
   .service-grid {
@@ -940,10 +942,12 @@ header {
 @media (max-width: 480px) {
   .services-section h2 {
     font-size: 22px;
+    text-align: left;
   }
 
   .services-subtext {
     font-size: 13px;
+    text-align: left;
   }
 
   .service-card h3 {
